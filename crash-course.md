@@ -25,3 +25,10 @@ Time | Activity
 **14:45-16:00** | Bob Fitak - An Introduction to R
 **18:30-21:30** | *Dont Miss the Opening Reception!!!!*
 </div>
+
+Notes from metting: delete before workshop:
+R - practice installing R packages
+find Google doc for command line course ideas???
+Replacing/regexp???? or sed/awk/perl/etc
+PROKA automated pipeline for bacteria
+RAST - tool for assembly matching, graphical map of synteny
