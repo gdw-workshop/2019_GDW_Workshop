@@ -27,8 +27,8 @@ Time | Activity
 </div>
 
 Notes from metting: delete before workshop:
-R - practice installing R packages
-find Google doc for command line course ideas???
-Replacing/regexp???? or sed/awk/perl/etc
-PROKA automated pipeline for bacteria
-RAST - tool for assembly matching, graphical map of synteny
+1. R - practice installing R packages
+2. find Google doc for command line course ideas???
+3. Replacing/regexp???? or sed/awk/perl/etc
+4. PROKA automated pipeline for bacteria
+5. RAST - tool for assembly matching, graphical map of synteny
