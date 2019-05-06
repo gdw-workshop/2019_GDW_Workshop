@@ -14,6 +14,7 @@ Longs Peak Room, Lory Center
 
 Time | Activity
 --- | ---
+<img width=150/> | <img width=600/>
 **10:00-10:15** | Opening Remarks
 **10:15-10:45** | Mark Stenglein - Introductory Computer Science
 **10:45-11:00** | Coffee break
@@ -25,7 +26,7 @@ Time | Activity
 **18:30-21:30** | *Dont Miss the Opening Reception!!!!*
 </div>
 
-Notes from metting: delete before workshop:
+Notes from meeting: delete before workshop:
 1. R - practice installing R packages
 2. find Google doc for command line course ideas???
 3. Replacing/regexp???? or sed/awk/perl/etc
