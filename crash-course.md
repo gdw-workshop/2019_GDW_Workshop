@@ -14,7 +14,6 @@ Longs Peak Room, Lory Center
 
 Time | Activity
 --- | ---
-<img width=100/> | <img width=500/>
 **10:00-10:15** | Opening Remarks
 **10:15-10:45** | Mark Stenglein - Introductory Computer Science
 **10:45-11:00** | Coffee break
