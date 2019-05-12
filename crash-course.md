@@ -17,12 +17,11 @@ Time | Activity
 <img width=150/> | <img width=600/>
 **10:00-10:15** | Opening Remarks
 **10:15-10:45** | Mark Stenglein - Introductory Computer Science
-**10:45-11:00** | Coffee break
-**11:00-12:15** | Bob Fitak - The UNIX Command line [Lecture](./lectures/Fitak_GWD2019_CommandLine.pdf) and computer [Tutorial](./exercises/command-line-tutorial.md)
-**12:15-13:15** | Lunch provided onsite
-**13:15-14:30** | Mark Stenglein - Command Line Utilities: installing programs, scripting, SSH, TBD (screen, nohup, PATH)
-**14:30-14:45** | Coffee break
-**14:45-16:00** | Bob Fitak - An Introduction to R
+**10:45-12:00** | Bob Fitak - The UNIX Command line [Lecture](./lectures/Fitak_GWD2019_CommandLine.pdf) and computer [Tutorial](./exercises/command-line-tutorial.md)
+**12:00-13:00** | Lunch provided onsite
+**13:00-14:15** | Mark Stenglein - Command Line Utilities: installing programs, scripting, SSH, TBD (screen, nohup, PATH)
+**14:15-14:30** | Coffee break
+**14:30-16:00** | Bob Fitak - An Introduction to R
 **18:30-21:30** | *Dont Miss the Opening Reception!!!!*
 </div>
 
