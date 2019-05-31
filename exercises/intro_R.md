@@ -16,4 +16,10 @@ If ___R Studio___ is not available, you can download it at this link: [R Studio]
 Once open, ___R Studio___ should look something like this:
 ![Rstudio1](../images/rstudio1.png)
 
-___R Studio___ combines a graphical user interface with R's terminal-like interface.  
+___R Studio___ combines a graphical user interface with R's terminal-like interface called the "console".  
+Let's start by writing a new R script:
+1.  Click on the "+" icon in the upper left
+2.  Select "R script"
+
+
+
