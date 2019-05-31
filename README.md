@@ -11,10 +11,13 @@ Content for the 2019 Genomics of Disease in Wildlife Workshop
 
 We will post as much material as possible as soon as possible. Our intent is to leave this material online indefinitely.
 
-### Sunday June 2, 2019. Pre-workshop crash course and Opening Reception 
+
+
+
+### Sunday June 2, 2019. Pre-workshop clinic and Opening Reception 
 Room 304-306 and Longs Peak Room, Lory Center
 
-#### Pre-workshop command line crash-course (10:00 - 16:00)
+#### Pre-workshop command line clinic (10:00 - 16:00)
 
 <div align="center">
 
