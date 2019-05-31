@@ -103,7 +103,7 @@ To exit the manual for ls, enter `q`.
   
 ---
 
-_Break time!  Let's reconvene for a minute to make sure we are all on the same page_
+___Break time!  Let's reconvene for a minute to make sure we are all on the same page___
 
 ---  
 
@@ -159,11 +159,12 @@ Now, let's move this renamed file to the Desktop:
 mv Desktop.deleteme.txt ..
 ```
 Notice again our use of the `..`.  Nice and quick, eh?  Way easier than dragging and dropping, am I right? (OK... we can perhaps agree to disagree.  But if you have to do that operation 10,000 times...?)
+
 ### Hint:  You can actually drag and drop files and folders from your GUI into the terminal.  Try it out with the `ls` command and the `Practice` folder if you dare!
 
 ---
 
-_Break time!  Let's reconvene for a minute to make sure we are all on the same page_  
+___Break time!  Let's reconvene for a minute to make sure we are all on the same page___  
 
 ---  
 
