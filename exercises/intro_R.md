@@ -91,8 +91,9 @@ The most common types of data stored in R variables are:
   - character (e.g. "a", "B", "c", "D")
   - logical (e.g., TRUE, FALSE, FALSE, TRUE)
 - **data frames** - two dimensional list of items (i.e., a table)
+
 | Day | Count |
-| :---: | :---:
+| :---: | :---: |
 | Monday | 2 |
 | Tuesday | 3 |
 | Wednesday | 9 |
