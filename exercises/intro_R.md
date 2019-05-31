@@ -139,5 +139,15 @@ day1 <- c(day[1], count[1])
 _Got complicated pretty quickly, huh?  We will talk about this one as a class._
 
 
+Now data frames.  We can combine our two vectors into a data frame.  Enter these commands and `Run` them.
+```R
+# Build a data frame
+data <- data.frame(day, count)
+```
+How many rows and columns are in the `data` variable?  Use the `dim()` function:
+```R
+# Get the dimensions of a table (rows, columns)
+dim(data)
+```
 
 
