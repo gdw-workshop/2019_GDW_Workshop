@@ -45,6 +45,8 @@ Time | Activity
 **19:30-20:00** | Introduction of the Best Practices workflow group exercise, Bob Fitak: [Scenarios](./GDW_2019_scenarios.pdf) [Powerpoint](./lectures/Fitak_GWD2018_GroupActivity.pdf)  
 **20:00-21:30** | Refreshments and Social Time 
 
+
+
 ### Monday June 3, 2019. Day 1: NGS Data Overview, Genome Mining
 Lory Center Room 304-306
 
@@ -64,6 +66,8 @@ Time | Activity
 **16:00-17:00** | Tour of CSU Veterinary Teaching Hospital
 **17:00-19:00** | Free time and dinner, Rams Horn Dining Center 
 **19:30-21:00** | Optional computer time with instructors
+
+
 
 ### Tuesday June 4, 2019: Genome Assembly, Whole Genome Alignments, Metagenomics
 
@@ -86,6 +90,8 @@ Time | Activity
 **19:30-20:30** | Plenary Speaker, Loren Cassin-Sackett, University of South Florida
 **20:30-22:00** | Social Hour with Invited Speaker
 
+
+
 ### Wedendsday June 5, 2019: Multiple Sequence Alignments and Phylogenomics
 
 Time | Activity
@@ -107,6 +113,7 @@ Time | Activity
 **17:00-19:30** | Free time and dinner, Rams Horn Dining Center 
 **19:30-20:30** | Plenary Speaker, Roman Biek, University of Glasgow
 **20:30-21:30** | Social Hour with Invited Speaker
+
 
 
 ### Thursday June 6, 2019: Tree-based Inferences in Host-Pathogen Ecology and Evolution: Clocks, Transmission and Adaptation 
@@ -132,6 +139,7 @@ Time | Activity
 **19:00-21:00** | Optional computer time with instructors
 
 
+
 ### Friday June 7, 2019: Population Genomics
 
 Time | Activity
@@ -150,6 +158,8 @@ Time | Activity
 **15:15-15:35** | Coffee Break
 **15:35-17:00** | Computer Lab: Population Genomics, Chris Funk and Daryl Trumbo
 **18:00-??:??** | Party, Old Town Fort Collins
+
+
 
 ### Saturday June 8, 2019: Putting it all together: group project presentations
 
