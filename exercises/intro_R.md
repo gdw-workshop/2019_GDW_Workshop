@@ -92,7 +92,7 @@ The most common types of data stored in R variables are:
   - logical (e.g., TRUE, FALSE, FALSE, TRUE)
 - **data frames** - two dimensional list of items (i.e., a table)
 
-| Day | Count |
+| day | count |
 | :---: | :---: |
 | Monday | 2 |
 | Tuesday | 3 |
@@ -110,8 +110,24 @@ In your R script, make a new comment:
 
 Now let's build two vectors, one character and one numeric:
 ```R
-Day <- c("Monday", "Tuesday", "Wednesday", "Thurday", "Friday")
-Count <- c(2, 3, 9, 1, 6.7)
+day <- c("Monday", "Tuesday", "Wednesday", "Thurday", "Friday")
+count <- c(2, 3, 9, 1, 6.7)
 ```
 Notice that when using strings (or text), you must use quotations or else R expects them to be variables.  Also, the `c` means to combine the elements into a vector).  Highlight these lines and click on the `Run` icon. What do you notice?  _HINT: Look in the "Environment" box in the upper right_.
+
+With a numeric vector, you can perform arithmetic operations on each element simultaneously. Type the following into your R script then execute the command.
+```R
+count + 1
+``` 
+Repeat with `day`:
+```R
+day + 1
+```
+Did you get an error?  Yeah, it's hard to do math on a string.  There are many other operations we can do to text strings, but we don't have time to learn them today.
+
+
+
+
+
+
 
