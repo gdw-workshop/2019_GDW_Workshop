@@ -15,21 +15,14 @@ The first thing we need to do is copy and unpack the necessary data.
 
 ```
 # create a new directory
-
 cd
-
 mkdir hybrid_assembly
-
 cd hybrid_assembly
 
 # copy and unpack the data file
-
 cp ~/Desktop/GDW_Data/Mark/hybrid_assembly_exercise_files.tgz .
-
 tar xvf hybrid_assembly_exercise_files.tgz
 ```
-
-Download [this file](https://drive.google.com/open?id=1SIPyxxLjYVWjzRfoPgpc8cDreCe9nuAX) and move it into the hybrid_assembly directory you just created.  Then unpack it:
 
 
 Now that we have the data, let's assemble the short read data alone. Run the SPAdes assembler as follows:
@@ -42,11 +35,12 @@ This should take ~3 minutes to run on your laptops.
 
 A couple notes about this:
 
-- SPAdes usually does multiple assemblies with different k-mer sizes and picks the best one to report.  Here, we are telling SPAdes to only do a k=127 assembly in order to save time
-- SPAdes also includes an error correction step, which we are skipping by specifying the --only-assembler option.  The reads you are using have already been corrected by running SPAdes with the --only-error-correction option.  
+- SPAdes usually does multiple assemblies with different k-mer sizes and uses the best one.  Here, we are telling SPAdes to only do a k=127 assembly in order to save time
+- SPAdes also normally includes an error correction step, which we are skipping by specifying the --only-assembler option.  The reads you are using have already been corrected by running SPAdes with the --only-error-correction option.  
 
 
-When the assembly finishes, let's grab the contigs and use [QUAST](http://quast.sourceforge.net/quast) to get some basic statistics about the assembly.  The assembly will be in the `illumina_only_assembly` directory.  
+When the assembly finishes, let's grab the contigs and use [QUAST](http://quast.sourceforge.net/quast) to get some basic statistics about the assembly.  The assembly will be in the illumina_only_assembly directory.  
+
 What files can you see in that directory?  
 
 ```
