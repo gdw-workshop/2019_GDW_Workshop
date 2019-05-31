@@ -1,4 +1,4 @@
-## Long read assembly exercise
+## Genome assembly exercise, continued: Hybrid assembly
 
 In this exercise, we will perform an assembly using just short reads (Illumina MiSeq 2x250) or a hybrid assembly using the same short reads plus long reads from a MinION run. 
 
