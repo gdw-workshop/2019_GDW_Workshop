@@ -123,7 +123,7 @@ Time | Activity
 <img width=150/> | <img width=600/>
 **07:00–08:00** | Breakfast, Rams Horn Dining Center
 **08:15-08:25** | Step 5: Genomics of Host-pathogen Interaction
-**08:35-09:30** | Detecting and quantifying variants: [lecture](./lectures/Stenglein_intrahost_variants.pdf) and [exercise](variant_exercise.md), Mark Stenglein
+**08:35-09:30** | Detecting and quantifying variants: [lecture](./lectures/Stenglein_intrahost_variants.pdf) and [exercise](./exercises/variant_exercise.md), Mark Stenglein
 **09:30-10:00** | CSU Flash Talk, Rebekah Kading and Anna Fragre
 **10:00-10:20** | Coffee Break and Meet Invited Speaker
 **10:20-11:15** | Lectures: Intro to concepts of molecular clocks, timescale, patterns of neutral evolution, TMRCA, Roman Biek
