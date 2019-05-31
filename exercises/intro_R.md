@@ -40,7 +40,7 @@ Then try:
 1 + 120 - 6 * 2
 ```
 
-*Note: R follows the standard order of operations.  Remember:* __P__lease __E__xcuse __M__y __D__ear __A__unt __S__ally?
+*Note: R follows the standard order of operations.  Remember:* *P**lease **E**xcuse **M**y **D**ear **A**unt **S**ally?
 
 ```R
 1 + (120 - 6) * 2
