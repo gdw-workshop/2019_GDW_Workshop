@@ -29,11 +29,8 @@ The ___R Studio___ interface should now have 4 windows.
 - Environment - upper right - list of the various objects (e.g., vectors, variables, data frames, etc) currently present
 - Explorer - lower right - an explorer of the folders and files available in the current working directory.
 
-## Now let's learn some R!!!
-First, in our 'R Script', type a comment line to describe what we will be doing:
-```R
-# R Practice Session: Basic Math
-```
+# Now let's learn some R!!!
+## Part 1:  Basic Math
 R can easily perform basic math. For example, type in the console:
 ```R
 6 + 5
@@ -43,7 +40,7 @@ Then try:
 1 + 120 - 6 * 2
 ```
 
-_Note: R follows the standard order of operations.  Remember "__P__lease __E__xcuse __M__y __D__ear __A__unt __S__ally"?
+_Note: R follows the standard order of operations.  Remember "__P__lease __E__xcuse __M__y __D__ear __A__unt __S__ally"?_
 ```R
 1 + (120 - 6) * 2
 ```
@@ -57,11 +54,34 @@ Here is a table of the various standard operators:
 | / | arithmetic | division |
 | * | arithmetic | multiplication |
 | ^ | arithmetic | exponentiation |
-| = | logical | equals (compare two objects) |
 | > | logical | greater than |
 | < | logical | less than |
 | >= | logical | greater than or equal to |
 | <= | logical | less than or equal to |
-| == | logical | equals (compare two strings |
+| == | logical | equals (compare two objects) |
+
+Some logical operation examples:
+```R
+5 < 7
+124 >= 124
+56 < 10
+6 == 6
+9 == 8
+```
+
+## Part Two: R variables/objects and data types
+So yes, R can do all sorts of math for you, but so can a slide rule.  Let's start learning some more basics about the types of data R can understand and how to perform operations on those data.
+
+First, in our 'R Script' (upper left), type a comment line to describe what we will be doing:
+```R
+# R Practice Session: Basic Math
+```
+It is good practice to actually build your commands and scripts in the 'R Script' box, then run these commands in the console separately.  This allows you to add comments to supplement your commands, such as with notes or descriptions, make changes when there is an error, and to save the script.  This can thought of as your 'R notebook'
+
+
+
+
+
+
 
 
