@@ -53,7 +53,7 @@ The `~` always refers to this preset Home location.  Check your location using `
 Great job so far!!!
 
 ### Step 2:  making a directory
-First, let's make sure we are back to the Desktop directory:
+First, let's make sure we are back to the `Desktop` directory:
 ```
 cd ~/Desktop
 ```
@@ -70,7 +70,7 @@ cd Practice
 ```
 Piece of cake, huh!
 
-### Step3: listing contents
+### Step 3: listing contents
 Now we will look at see which directories and files are inside of a folder.  But first, let's move back to the Desktop.
 ```
 cd ../Desktop
@@ -160,7 +160,7 @@ Notice again our use of the `..`.  Nice and quick, eh?  Way easier than dragging
 ### Hint:  You can actually drag and drop files and folders from your GUI into the terminal.  Try it out with the `ls` command and the `Practice` folder if you dare!
 
 ---
-_Break time!  Let's reconvene for a minute to make sure we are all on the same page_
+_Break time!  Let's reconvene for a minute to make sure we are all on the same page_  
 ---  
 
 ### Step 7:  Viewing files
