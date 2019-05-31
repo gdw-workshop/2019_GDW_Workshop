@@ -1,0 +1,153 @@
+# An Introduction to R and R Studio!
+R is a programming language and free software environment for statistical computing and visualizations (i.e. making graphs). R is widely used among statisticians and data miners for developing statistical software, but has also become the workshorse for scientists across disciplines for its flexibility, speed, and cost (open source). R is written primarily in C, Fortran and R itself and is freely available under the GNU General Public License.
+
+You can download R here:
+[The R Project for Statistical Computing](https://www.r-project.org)
+
+R is already installed on your Macbook Pro computers, and you can open an R environment easily in the terminal by simply typing the command:
+```
+R
+```
+
+However, for this introduction we are going to use a tool called ___R Studio___ as our R environment. ___R Studio___ should already be installed on your computers as well.  You can open ___R Studio___ by searching for it on your computers (click on the magnifying glass in the upper right-hand corner and type "R Studio" and hit \<ENTER\>).
+
+If ___R Studio___ is not available, you can download it at this link: [R Studio](https://download1.rstudio.org/desktop/macos/RStudio-1.2.1335.dmg)
+
+Once open, ___R Studio___ should look something like this:
+![Rstudio1](../images/rstudio1.png)
+
+___R Studio___ combines a graphical user interface with R's terminal-like interface called the "console".  
+Let's start by writing a new R script:
+1.  Click on the "+" icon in the upper left
+2.  Select "R script"
+
+The ___R Studio___ interface should now have 4 windows.
+- R script - upper left - where you build your script/code by combining commands and comments.
+  - comment lines start with an "#" and are ignored by R
+  - commands are interpreted or run by R in the console.
+- R console - lower left - the R console, or command line interface where R commands are run
+- Environment - upper right - list of the various objects (e.g., vectors, variables, data frames, etc) currently present
+- Explorer - lower right - an explorer of the folders and files available in the current working directory.
+
+# Now let's learn some R!!!
+## Part 1:  Basic Math
+R can easily perform basic math. For example, type in the console (the spaces are optional, I think it looks easier to read):
+```R
+6 + 5
+```
+Then try:
+```R
+1 + 120 - 6 * 2
+```
+
+*Note: R follows the standard order of operations.  Remember:* "**P**lease **E**xcuse **M**y **D**ear **A**unt **S**ally?"
+
+```R
+1 + (120 - 6) * 2
+```
+
+Here is a table of the various standard operators:
+
+| Operator | Type | Description |
+| :---: | :---: | :---: |
+| + | arithmetic | addition |
+| - | arithmetic | subtraction |
+| / | arithmetic | division |
+| * | arithmetic | multiplication |
+| ^ | arithmetic | exponentiation |
+| > | logical | greater than |
+| < | logical | less than |
+| >= | logical | greater than or equal to |
+| <= | logical | less than or equal to |
+| == | logical | equals (compare two objects) |
+
+Some logical operation examples:
+```R
+5 < 7
+124 >= 124
+56 < 10
+6 == 6
+9 == 8
+```
+
+## Part Two: R variables/objects and data types
+So yes, R can do all sorts of math for you, but so can a slide rule.  Let's start learning some more basics about the types of data R can understand and how to perform operations on those data.
+
+First, in our 'R Script' (upper left), type a comment line to describe what we will be doing:
+```R
+# R Practice Session: Basic Variables
+```
+It is good practice to actually build your commands and scripts in the 'R Script' box, then run these commands in the console separately.  This allows you to add comments to supplement your commands, such as with notes or descriptions, make changes when there is an error, and to save the script.  This can thought of as your 'R notebook'.  Next, let's make some variables.  In your R script, on a new line, enter the following:
+```R
+a <- 5
+b <- 7
+a + b
+```
+The `<-` is the assignment operator that assigns values to a new variable. Now highlight your R script with the cursor and click on the 'Run' button. What happened?  You should notice that these lines were run in the R console below.  Does the result `12` make sense?
+
+The most common types of data stored in R variables are:
+- **vectors** - one dimensional list of items
+  - numeric (e.g. 1,2,3,4,5)
+  - character (e.g. "a", "B", "c", "D")
+  - logical (e.g., TRUE, FALSE, FALSE, TRUE)
+- **data frames** - two dimensional list of items (i.e., a table)
+
+| day | count |
+| :---: | :---: |
+| Monday | 2 |
+| Tuesday | 3 |
+| Wednesday | 9 |
+| Thursday | 1 |
+| Friday | 6.7 |
+
+- **matrices** - a special type of numeric, two-dimensional table for performing matrix operations
+- **lists** - a combination of variables, such as one or more vectors, data frames, or matrices.
+
+In your R script, make a new comment:
+```R
+# Vectors
+``` 
+
+Now let's build two vectors, one character and one numeric:
+```R
+day <- c("Monday", "Tuesday", "Wednesday", "Thurday", "Friday")
+count <- c(2, 3, 9, 1, 6.7)
+```
+Notice that when using strings (or text), you must use quotations or else R expects them to be variables.  Also, the `c` means to combine the elements into a vector).  Highlight these lines and click on the `Run` icon. What do you notice?  _HINT: Look in the "Environment" box in the upper right_.
+
+With a numeric vector, you can perform arithmetic operations on each element simultaneously. Type the following into your R script then execute the command.
+```R
+count + 1
+``` 
+Repeat with `day`:
+```R
+day + 1
+```
+Did you get an error?  Yeah, it's hard to do math on a string.  There are many other operations we can do to text strings, but we don't have time to learn them today.
+
+You can also access individual elements of a vector if needed.  Enter the following commands into your R script then `Run` them:
+```R
+# Get the second item in the 'day' vector:
+day[2]
+
+# Get the third and fourth elements of the 'count' vector:
+count[3:4]
+
+# Combine the first element from 'day' and 'count' into a new variable called 'day1'
+day1 <- c(day[1], count[1])
+```
+_Got complicated pretty quickly, huh?  We will talk about this one as a class._
+
+
+Now data frames.  We can combine our two vectors into a data frame.  Enter these commands and `Run` them.
+```R
+# Build a data frame
+data <- data.frame(day, count)
+```
+How many rows and columns are in the `data` variable?  Use the `dim()` function:
+```R
+# Get the dimensions of a table (rows, columns)
+dim(data)
+```
+
+

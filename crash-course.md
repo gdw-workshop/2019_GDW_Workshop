@@ -16,10 +16,10 @@ Time | Activity
 --- | ---
 <img width=150/> | <img width=600/>
 **10:00-10:15** | Opening Remarks - Introduction to the Lab Computers
-**10:15-10:45** | Mark Stenglein - Principles of Computer Science
-**10:45-12:15** | Bob Fitak - The UNIX Command line [Lecture](./lectures/Fitak_GWD2019_CommandLine.pdf) and computer [Tutorial](./exercises/command-line-tutorial.md)
+**10:15-11:45** | Bob Fitak - The UNIX Command line [Lecture](./lectures/Fitak_GWD2019_CommandLine.pdf) and computer [Tutorial](./exercises/command-line-tutorial.md)
+**11:45-12:15** | Mark Stenglein - Principles of Computing [Lecture](./lectures/Stenglein_computing_introduction.pdf)
 **12:15-13:15** | Lunch provided onsite
-**13:15-14:30** | Mark Stenglein - Command Line Utilities: installing programs, scripting, SSH, TBD (screen, nohup, PATH)
+**13:15-14:30** | Mark Stenglein - Command Line Utilities: installing programs, scripting, TBD (screen, nohup, PATH)
 **14:30-14:45** | Coffee break
 **14:45-16:00** | Bob Fitak - An Introduction to R
 **18:30-21:30** | *Dont Miss the Opening Reception!!!!*
