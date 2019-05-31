@@ -2,9 +2,9 @@
 
 In this exercise, we will perform an assembly using just short reads (Illumina MiSeq 2x250) or a hybrid assembly using the same short reads plus long reads from a MinION run. 
 
-These reads derive from genomic DNA from a veterinary clinical Pseudomonas aeruginosa isolate.  The same gDNA was sequenced on an Illumina MiSeq to generate 433191 2x250 bp read pairs and on an Oxford Nanopore MinION to generate 82702 long reads with an average length of 2150 bp.  
+These reads derive from genomic DNA from a veterinary clinical _Pseudomonas aeruginosa_ isolate.  The same gDNA was sequenced on an Illumina MiSeq to generate 433191 2x250 bp read pairs and on an Oxford Nanopore MinION to generate 82702 long reads with an average length of 2150 bp.  
 
-- How long would you expect a Pseudomonas aeruginosa genome to be?  How did you figure that out?
+- How long would you expect a _Pseudomonas aeruginosa_ genome to be?  How did you figure that out?
 - Given the answer above, What is the expected coverage levels of MiSeq and MinION data?
 
 ### Illumina-only assembly
