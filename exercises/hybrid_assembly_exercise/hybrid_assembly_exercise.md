@@ -142,7 +142,15 @@ You can see that the fact that this is a circular genome raises some issues, as 
 
 ### Additional, time permitting exercises
 
-One thing that we didn't do here is map the raw data to the assembly.  You could, for instance, map the illumina reads to the reference genome (or the hybrid assembly contigs) using bowtie2.  You'll have to create an index first, as we did earlier.  You could also use minimap2 to map the nanopore reads to the reference genome.  Note that minimap2 doesn't make you pre-make an index. You just specify the reference's fasta file and it implicitly does it for you.
+One thing that we didn't do here is map the raw data to the assembly.  You could, for instance, map the illumina reads to the reference genome (or the hybrid assembly contigs) using bowtie2.  You'll have to create an index first, as we did earlier.  
 
-You could also use fastqc to check out the quality and length of these nanopore reads.
+You could also use minimap2 to map the nanopore reads to the reference genome.  Note that minimap2 doesn't make you pre-make an index. You just specify the reference's fasta file and it implicitly does it for you.  The syntax for that command would be:
+
+```
+minimap2 -a -x map-ont Pa_ref.fa nanopore_reads.fastq > nanopore_reads_mapped_to_ref.sam
+```
+
+Then you could drag the .sam files into geneious to inspect mapped reads.
+
+You could also use fastqc to check out the quality and length of these nanopore reads.  
 
