@@ -102,7 +102,9 @@ man ls
 To exit the manual for ls, enter `q`.
   
 ---
+
 _Break time!  Let's reconvene for a minute to make sure we are all on the same page_
+
 ---  
 
 ### Step 4: making files
@@ -160,7 +162,9 @@ Notice again our use of the `..`.  Nice and quick, eh?  Way easier than dragging
 ### Hint:  You can actually drag and drop files and folders from your GUI into the terminal.  Try it out with the `ls` command and the `Practice` folder if you dare!
 
 ---
+
 _Break time!  Let's reconvene for a minute to make sure we are all on the same page_  
+
 ---  
 
 ### Step 7:  Viewing files
