@@ -100,7 +100,7 @@ The most common types of data stored in R variables are:
 | Thursday | 1 |
 | Friday | 6.7 |
 
-- **matrices** - a special type of numeric, 2 dimensional table for performing matrix operations
+- **matrices** - a special type of numeric, two-dimensional table for performing matrix operations
 - **lists** - a combination of variables, such as one or more vectors, data frames, or matrices.
 
 In your R script, make a new comment:
@@ -125,8 +125,18 @@ day + 1
 ```
 Did you get an error?  Yeah, it's hard to do math on a string.  There are many other operations we can do to text strings, but we don't have time to learn them today.
 
+You can also access individual elements of a vector if needed.  Enter the following commands into your R script then `Run` them:
+```R
+# Get the second item in the 'day' vector:
+day[2]
 
+# Get the third and fourth elements of the 'count' vector:
+count[3:4]
 
+# Combine the first element from 'day' and 'count' into a new variable called 'day1'
+day1 <- c(day[1], count[1])
+```
+_Got complicated pretty quickly, huh?  We will talk about this one as a class._
 
 
 
