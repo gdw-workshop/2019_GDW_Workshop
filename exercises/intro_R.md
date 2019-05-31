@@ -83,9 +83,21 @@ a <- 5
 b <- 7
 a + b
 ```
-Now highlight your R script with the cursor and click on the 'Run' button. What happened?  You should notice that these lines were run in the R console below.  Does the result `12` make sense?
+The `<-` is the assignment operator that assigns values to a new variable. Now highlight your R script with the cursor and click on the 'Run' button. What happened?  You should notice that these lines were run in the R console below.  Does the result `12` make sense?
 
-
+The most common types of data stored in R variables are:
+- **vectors** - one dimensional list of items
+  - numeric (e.g. 1,2,3,4,5)
+  - character (e.g. "a", "B", "c", "D")
+  - logical (e.g., TRUE, FALSE, FALSE, TRUE)
+- **data frames** - two dimensional list of items (i.e., a table)
+| Day | Count |
+| :---: | :---:
+| Monday | 2 |
+| Tuesday | 3 |
+| Wednesday | 9 |
+| Thursday | 1 |
+| Friday | 6.7 |
 
 
 
