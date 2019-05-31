@@ -22,10 +22,10 @@ Let's start by writing a new R script:
 2.  Select "R script"
 
 The ___R Studio___ interface should now have 4 windows.
-1. R script - upper left - where you build your script/code by combining commands and comments.
+- R script - upper left - where you build your script/code by combining commands and comments.
   - comment lines start with an "#" and are ignored by R
   - commands are interpreted or run by R in the console.
-2. R console - lower left - the R console, or command line interface where R commands are run
-3. Environment - upper right - list of the various objects (e.g., vectors, variables, data frames, etc) currently present
-4. Explorer - lower right - an explorer of the folders and files available in the current working directory.
+- R console - lower left - the R console, or command line interface where R commands are run
+- Environment - upper right - list of the various objects (e.g., vectors, variables, data frames, etc) currently present
+- Explorer - lower right - an explorer of the folders and files available in the current working directory.
 
