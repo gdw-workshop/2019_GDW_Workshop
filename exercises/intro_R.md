@@ -77,7 +77,7 @@ First, in our 'R Script' (upper left), type a comment line to describe what we w
 ```R
 # R Practice Session: Basic Variables
 ```
-It is good practice to actually build your commands and scripts in the 'R Script' box, then run these commands in the console separately.  This allows you to add comments to supplement your commands, such as with notes or descriptions, make changes when there is an error, and to save the script.  This can thought of as your 'R notebook'.  Next, let's make some variables.  In your R script, enter the following:
+It is good practice to actually build your commands and scripts in the 'R Script' box, then run these commands in the console separately.  This allows you to add comments to supplement your commands, such as with notes or descriptions, make changes when there is an error, and to save the script.  This can thought of as your 'R notebook'.  Next, let's make some variables.  In your R script, on a new line, enter the following:
 ```R
 a <- 5
 b <- 7
