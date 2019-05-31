@@ -147,4 +147,18 @@ Drag this sam file into Geneious and check it out.
 You can see that the fact that this is a circular genome raises some issues, as depicted in [this figure](https://media.springernature.com/full/springer-static/image/art%3A10.1186%2Fs13059-015-0849-0/MediaObjects/13059_2015_849_Fig1_HTML.gif).  Using a tool like [circulator](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-015-0849-0) could perhaps help resolve the end sequences to finalize the assembly.
 
 
+### Additional, time permitting exercises
+
+One thing that we didn't do here is map the raw data to the assembly.  You could, for instance, map the illumina reads to the reference genome (or the hybrid assembly contigs) using bowtie2.  You'll have to create an index first, as we did earlier.
+
+You could also use minimap2 to map the nanopore reads to the reference genome.  Note that minimap2 doesn't make you pre-make an index. You just specify the reference's fasta file and it implicitly does it for you.  The syntax for that command would be:
+
+```
+minimap2 -a -x map-ont Pa_ref.fa nanopore_reads.fastq > nanopore_reads_mapped_to_ref.sam
+```
+
+Then you could drag the .sam files into geneious to inspect mapped reads.
+
+You could also use fastqc to check out the quality and length of these nanopore reads.
+
 
