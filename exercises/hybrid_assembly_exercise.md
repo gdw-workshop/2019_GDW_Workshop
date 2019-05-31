@@ -59,20 +59,20 @@ Run QUAST to generate some statistics on the assembly:
 quast.py illumina_only_contigs.fa -o illumina_only_quast_report
 ```
 
-You will notice in the `illumina_only_quast_report` directory a file named report.html.  Open that in a browser by running:
+You will notice in the illumina_only_quast_report directory a file named report.html.  Open that in a browser by running:
 
 ```
 open illumina_only_quast_report/report.html
 ```
 
-Answer these questions:
+View the report in your browser and consider these questions:
 
 - what is the total length of the assembly?  How does this compare to the expected genome size from above?
 - How many contigs were generated in total?  How many of these are >50,000 bp in length?
 - What is the assembly N50?  How does this compare to the expected total genome size?
 - Does this assembly include any gaps (these would show up as Ns)?  In other words, is this a scaffolded assembly?
 
-Let's map the contigs to a reference genome.  We happen to have a suitable reference genome to use in this case, which is convenient for assessing our assembly, and not always the case. 
+Another way to assess an assembly would be to map the contigs to a suitably close reference genome.  We happen to have such a reference genome to use in this case, which is convenient and not always the case. 
 
 Short read mappers like bowtie are not necessarily the best tools for mapping long reads or long sequences like contigs.  We'll use the [minimap2](https://github.com/lh3/minimap2) tool to map the contigs to this pre-existing refence genome.
 
@@ -94,7 +94,9 @@ OK, let's see if we can get a better assembly by including long read data.  SPAd
 ```
 SPAdes can take as an input an unlimited number of PacBio and Oxford Nanopore libraries.
 
-PacBio CLR and Oxford Nanopore reads are used for hybrid assemblies (e.g. with Illumina or IonTorrent). There is no need to pre-correct this kind of data. SPAdes will use PacBio CLR and Oxford Nanopore reads for gap closure and repeat resolution.
+PacBio CLR and Oxford Nanopore reads are used for hybrid assemblies (e.g. with Illumina or IonTorrent). 
+There is no need to pre-correct this kind of data. SPAdes will use PacBio CLR and Oxford Nanopore reads 
+for gap closure and repeat resolution.
 
 ...Oxford Nanopore reads are provided with --nanopore option.
 ```
