@@ -36,6 +36,7 @@ Time | Activity
 
 Time | Activity
 --- | ---
+<img width=150/> | <img width=600/>
 **18:30-18:45** | Welcome and Opening Remarks, Sue VandeWoude and Jill Pecon Slattery
 **18:45-19:30** | 10 Attendee Presentations
 **19:30-20:00** | Introduction of the Best Practices workflow group exercise, Bob Fitak: [Scenarios](./GDW_2019_scenarios.pdf) [Powerpoint](./lectures/Fitak_GWD2018_GroupActivity.pdf)  
@@ -44,9 +45,9 @@ Time | Activity
 ### Monday June 3, 2019. Day 1: NGS Data Overview, Genome Mining
 Lory Center Room 304-306
 
-<div align="center">
 Time | Activity
 --- | ---
+<img width=150/> | <img width=600/>
 **07:00–08:00** | Breakfast, Rams Horn Dining Center
 **08:15-08:25** | Step 1: What are my NGS tools for wildlife disease research? Jill Pecon Slattery
 **08:25-08:35** | Introduction to workshop computers, Joe Strecker
@@ -65,6 +66,7 @@ Time | Activity
 
 Time | Activity
 --- | ---
+<img width=150/> | <img width=600/>
 **07:00–08:00** | Breakfast, Rams Horn Dining Center
 **08:15-08:25** | Step 2: Best Practices for Generating Quality Genomes of Host and Pathogen, Jill Pecon Slattery
 **08:25-09:30** | [Mapping to Reference Genomes](./lectures/Fitak_GWD2019_Mapping.pdf), Bob Fitak
@@ -85,6 +87,7 @@ Time | Activity
 
 Time | Activity
 --- | ---
+<img width=150/> | <img width=600/>
 **07:00–08:00** | Breakfast, Rams Horn Dining Center
 **08:15-08:25** | Step 3: Comparing Differences Within and Between Genomes, Jill Pecon Slattery
 **08:25-09:00** | Introduction to Multiple Sequence Alignments of Targeted & Whole Genomes, Jill Pecon Slattery
@@ -107,6 +110,7 @@ Time | Activity
 
 Time | Activity
 --- | ---
+<img width=150/> | <img width=600/>
 **07:00–08:00** | Breakfast, Rams Horn Dining Center
 **08:15-08:25** | Step 5: Genomics of Host-pathogen Interaction
 **08:35-09:30** | Detecting and quantifying variants[lecture](./lectures/Stenglein_intrahost_variants.pdf) and [exercise](variant_exercise.md), Mark Stenglein
@@ -129,6 +133,7 @@ Time | Activity
 
 Time | Activity
 --- | ---
+<img width=150/> | <img width=600/>
 **07:00–08:00** | Breakfast, Rams Horn Dining Center
 **08:15-08:25** | Step 4: Applying my genomic tools across populations within host & pathogen, Jill Pecon Slattery
 **08:25-09:30** | Population Genomics 101, Chris Funk
@@ -147,6 +152,7 @@ Time | Activity
 
 Time | Activity
 --- | ---
+<img width=150/> | <img width=600/>
 **07:00–08:00** | Breakfast, Rams Horn Dining Center
 **08:15-08:20** | Step 6: Our Workflow & GDW2019 Publication, Jill, Bob, Sue, Chris, Mark
 **08:20-09:00** | Scenario Workflow #1: Group 1
