@@ -75,10 +75,15 @@ So yes, R can do all sorts of math for you, but so can a slide rule.  Let's star
 
 First, in our 'R Script' (upper left), type a comment line to describe what we will be doing:
 ```R
-# R Practice Session: Basic Math
+# R Practice Session: Basic Variables
 ```
-It is good practice to actually build your commands and scripts in the 'R Script' box, then run these commands in the console separately.  This allows you to add comments to supplement your commands, such as with notes or descriptions, make changes when there is an error, and to save the script.  This can thought of as your 'R notebook'
-
+It is good practice to actually build your commands and scripts in the 'R Script' box, then run these commands in the console separately.  This allows you to add comments to supplement your commands, such as with notes or descriptions, make changes when there is an error, and to save the script.  This can thought of as your 'R notebook'.  Next, let's make some variables.  In your R script, enter the following:
+```R
+a <- 5
+b <- 7
+a + b
+```
+Now highlight your R script with the cursor and click on the 'Run' button. What happened?  You should notice that these lines were run in the R console below.  Does the result `12` make sense?
 
 
 
