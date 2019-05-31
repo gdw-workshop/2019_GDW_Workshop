@@ -31,7 +31,7 @@ The ___R Studio___ interface should now have 4 windows.
 
 # Now let's learn some R!!!
 ## Part 1:  Basic Math
-R can easily perform basic math. For example, type in the console:
+R can easily perform basic math. For example, type in the console (the spaces are optional, I think it looks easier to read):
 ```R
 6 + 5
 ```
@@ -40,7 +40,8 @@ Then try:
 1 + 120 - 6 * 2
 ```
 
-_Note: R follows the standard order of operations.  Remember "__P__lease __E__xcuse __M__y __D__ear __A__unt __S__ally"?_
+_Note: R follows the standard order of operations.  Remember \"__P__lease __E__xcuse __M__y __D__ear __A__unt __S__ally\"?_
+
 ```R
 1 + (120 - 6) * 2
 ```
