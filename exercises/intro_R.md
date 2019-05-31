@@ -29,3 +29,39 @@ The ___R Studio___ interface should now have 4 windows.
 - Environment - upper right - list of the various objects (e.g., vectors, variables, data frames, etc) currently present
 - Explorer - lower right - an explorer of the folders and files available in the current working directory.
 
+## Now let's learn some R!!!
+First, in our 'R Script', type a comment line to describe what we will be doing:
+```R
+# R Practice Session: Basic Math
+```
+R can easily perform basic math. For example, type in the console:
+```R
+6 + 5
+```
+Then try:
+```R
+1 + 120 - 6 * 2
+```
+
+_Note: R follows the standard order of operations.  Remember "__P__lease __E__xcuse __M__y __D__ear __A__unt __S__ally"?
+```R
+1 + (120 - 6) * 2
+```
+
+Here is a table of the various standard operators:
+
+| Operator | Type | Description |
+| :---: | :---: | :---: |
+| + | arithmetic | addition |
+| - | arithmetic | subtraction |
+| / | arithmetic | division |
+| * | arithmetic | multiplication |
+| ^ | arithmetic | exponentiation |
+| = | logical | equals (compare two objects) |
+| > | logical | greater than |
+| < | logical | less than |
+| >= | logical | greater than or equal to |
+| <= | logical | less than or equal to |
+| == | logical | equals (compare two strings |
+
+
