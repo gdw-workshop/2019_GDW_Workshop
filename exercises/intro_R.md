@@ -100,7 +100,18 @@ The most common types of data stored in R variables are:
 | Thursday | 1 |
 | Friday | 6.7 |
 
+- **matrices** - a special type of numeric, 2 dimensional table for performing matrix operations
+- **lists** - a combination of variables, such as one or more vectors, data frames, or matrices.
 
+In your R script, make a new comment:
+```R
+# Vectors
+``` 
 
-
+Now let's build two vectors, one character and one numeric:
+```R
+Day <- c("Monday", "Tuesday", "Wednesday", "Thurday", "Friday")
+Count <- c(2, 3, 9, 1, 6.7)
+```
+Notice that when using strings (or text), you must use quotations or else R expects them to be variables.  Also, the `c` means to combine the elements into a vector).  Highlight these lines and click on the `Run` icon. What do you notice?  _HINT: Look in the "Environment" box in the upper right_.
 
