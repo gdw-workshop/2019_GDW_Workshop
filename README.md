@@ -7,22 +7,17 @@ Content for the 2019 Genomics of Disease in Wildlife Workshop
 
 [Course agenda (pdf)](./GDW2019_Agenda.pdf)
 
-### Command line Crash Course
-see agenda [here](./crash-course.md)
-
 ### This page contains the workshop agenda and links to course material 
 
 We will post as much material as possible as soon as possible. Our intent is to leave this material online indefinitely.
 
-### Sunday June 2, 2019. Pre-workshop crash course and Opening Reception (6:30-9:30 PM) 
+### Sunday June 2, 2019. Pre-workshop crash course and Opening Reception 
 Room 304-306 and Longs Peak Room, Lory Center
 
-
-
-### Pre-workshop command line crash-course 
-### 10 a.m. – 4 p.m.
+#### Pre-workshop command line crash-course (10:00 - 16:00)
 
 <div align="center">
+
 Time | Activity
 --- | ---
 <img width=150/> | <img width=600/>
@@ -37,8 +32,7 @@ Time | Activity
 </div>
 
 
-### Welcome and opening reception
-### 10 a.m. – 4 p.m.
+### Welcome and opening reception (18:30 - 21:30)
 
 Time | Activity
 --- | ---
