@@ -70,7 +70,7 @@ Some logical operation examples:
 9 == 8
 ```
 
-## Part Two: R variables/objects and data types
+## Part 2: R variables/objects and data types
 So yes, R can do all sorts of math for you, but so can a slide rule.  Let's start learning some more basics about the types of data R can understand and how to perform operations on those data.
 
 First, in our 'R Script' (upper left), type a comment line to describe what we will be doing:
@@ -144,10 +144,35 @@ Now data frames.  We can combine our two vectors into a data frame.  Enter these
 # Build a data frame
 data <- data.frame(day, count)
 ```
-How many rows and columns are in the `data` variable?  Use the `dim()` function:
+
+Similar to a vector, you can access specific elements by refering to the specific row and column indices:
+```R
+# Get the item in the 3rd row and 2nd column
+data[3,2]
+
+# Get all of column 1
+col1 <- data[,1]
+
+# Get all of row 5
+row5 <- data[5,]
+```
+
+# Part 3: Functions
+R naturally has numerous functions built-in to speed up your analyses. For example, how many rows and columns are in the `data` variable?  Use the `dim()` function:
 ```R
 # Get the dimensions of a table (rows, columns)
 dim(data)
 ```
 
+Notice that the syntax for a function is the name of a function, then some object or variable inside of parentheses. Here is another example to get the mean and standard deviation of the `count` vector:
+```R
+# Get the mean
+mean(count)
+sd(count)
+```
 
+I have included a quick reference guide to common R functions [Here](./Rcard.pdf).  If you are ever unsure of how to use a function, try searching the internet (there are TONS of resources) or use the help menu:
+```R
+# Get the help manual for a function
+help(mean)
+```
