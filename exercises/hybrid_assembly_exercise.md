@@ -11,24 +11,28 @@ These reads derive from genomic DNA from a veterinary clinical Pseudomonas aerug
 
 First, we will do an Illumina-only assembly.  
 
-The first thing we need to do is grab the data.  
+The first thing we need to do is copy and unpack the necessary data.  
 
 ```
 # create a new directory
+
 cd
+
 mkdir hybrid_assembly
+
 cd hybrid_assembly
+
+# copy and unpack the data file
+
+cp ~/Desktop/GDW_Data/Mark/hybrid_assembly_exercise_files.tgz .
+
+tar xvf hybrid_assembly_exercise_files.tgz
 ```
 
 Download [this file](https://drive.google.com/open?id=1SIPyxxLjYVWjzRfoPgpc8cDreCe9nuAX) and move it into the hybrid_assembly directory you just created.  Then unpack it:
 
-```
-tar xvf hybrid_assembly_exercise_files.tgz
-```
 
-Double check that you can see a number of new files
-
-To assemble the short read data alone, run the SPAdes assembler as follows:
+Now that we have the data, let's assemble the short read data alone. Run the SPAdes assembler as follows:
 
 ```
 spades.py -o illumina_only_assembly -1 illumina_R1_corrected.fastq -2 illumina_R2_corrected.fastq -t 8 -m 12 --only-assembler  -k 127
