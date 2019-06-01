@@ -284,7 +284,7 @@ Search a file for a specific pattern (e.g., ATGC):
 ```
 grep "ATGC" file
 ```
-The above command returns the lines that match the pattern  
+The above command returns the lines that match the pattern "ATGC"
 
 Show various columns of a tab-delimited file (e.g., a spreadsheet):
 ```
