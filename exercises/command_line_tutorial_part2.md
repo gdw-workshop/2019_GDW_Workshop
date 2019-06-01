@@ -32,7 +32,7 @@ The PATH has a special meaning in unix environments.  The PATH is a list of dire
 
 PATH is what's called an [environmental variable](https://en.wikipedia.org/wiki/Environment_variable).  Here are two ways to find your PATH:
 
-- Run the `env` command in the terminal.  Do you see your $PATH?
+- Run the `env` command in the terminal to show all the environmental variables.  Do you see your $PATH?
 - Run `echo $PATH` in your terminal.  
 
 Can you recognize what other environmental variables mean?
@@ -62,21 +62,21 @@ The PATH is a convience, so that instead of always typing:
 /bin/ls
 ```
 
-You can just type `ls`.  
-
-Other software that's not a core part of the operating system, for instance the blastn and bowtie2 aligners, can also be found by `which`:
-
-```
-which blastn
-which bowtie2
-```
+You can just type `ls`.    Though it is worth noting that `/bin/ls` and `ls` both do the same thing (run the `ls` command located in the `/bin` directory).
 
 Even bash itself is a command in your PATH:
 ```
 which bash
 ```
 
-Note that all these commands are in your PATH.   Let's try something.  Let's change your PATH:
+Other software that you've installed that's not a part of the core operating system, for instance the blastn and bowtie2 aligners, can also be found by `which`:
+
+```
+which blastn
+which bowtie2
+```
+
+Let's try something.  Let's change your PATH:
 
 ```
 cd
@@ -89,7 +89,7 @@ What do you think the impact of this change will be?  Try this:
 env
 ```
 
-How about these two commands?
+How about these commands?
 
 ```
 ls
@@ -100,6 +100,8 @@ ls
 
 What's going on?  Why do these commands work or not work?
 
+In real life, you wouldn't sabotage yourself by overwriting your PATH.  There will be an example below of how to change your PATH to add additional directories to it.  For now, close your terminal window and open a new one to reset your enviroment. 
+
 ### Installing software from the command line
 
 Installing software in a linux command-line environment can be a roadblock to beginners.  Let's practice installing a bioinformatics tool from the command line.
@@ -108,7 +110,7 @@ We'll install jellyfish, a tool for counting [k-mers](https://en.wikipedia.org/w
 
 Here you find there are two options:
 
-1. You can download a so-called pre-compiled binary.  Pre-compiled binaries are ready to go, but you must download a file that is matched to your operating system.  Since we are working on mac laptops, you'd want to download the jellyfish-macosx file from github
+1. You can download a so-called pre-compiled binary.  Pre-compiled binaries are ready to run programs, but they must match to your operating system and computer.  Since we are working on mac laptops, you'll want to download the jellyfish-macosx binary from github
 
 2. You can download the source code for the software and compile it to create a binary program file yourself. Sometimes this is the only option, for example for [minimap2](https://github.com/lh3/minimap2/releases), a program we'll use later this week.  
 
@@ -139,18 +141,20 @@ What do you think is going on?
 
 <br><br><br><br> <br><br><br><br> <br><br><br><br> <br><br><br><br> 
 
-One issue is that the file jellyfish-macosx is not in your $PATH.  Or more accurately, jellyfish-macosx _is_ in your home directory, and your home directory is not in your $PATH.  Let's confirm this by using the which command again:
+One issue is that the file jellyfish-macosx is not in your $PATH.  Or more accurately, jellyfish-macosx is in your home directory, which is not in your $PATH.  Let's confirm this by using the which command again:
 
 ```
 which jellyfish-macosx
 ```
 
-To fix this situation, we could either move the jellyfish file into a directory in your PATH, or could add your home directory to your $PATH.  The first option would manifest as:
+To fix this situation, we could either move the jellyfish file into a directory in your PATH, or could add your home directory to your PATH.  The first option would manifest as:
 
 ```
 # option 1: move jellyfish to a directory already in your $PATH
 sudo mv jellyfish-macosx /usr/local/bin
 ```
+
+`/usr/local/bin` is a directory where user installed programs often get put.
 
 Note that you had to use the sudo (**s**uper **u**ser **do**) command to move jellyfish to /usr/local/bin.  This is because you lacked the necessary permissions to move a file into that directory.  Running commands prepended by sudo is the same as doing something with Administrator priveleges (so be careful!).
 
@@ -160,12 +164,11 @@ The second option would be:
 export PATH=$PATH:/Users/gdw
 ```
 
-Here, you are changing the $PATH the way you are supposed to, by appending a new directory to the $PATH instead of overwriting it as we did above.  So bash interprets `PATH=$PATH:/Users/gdw` as "assign to the variable named PATH the current value of the variable PATH plus ":/Users/gdw" 
+Here, you are changing the PATH the way you are supposed to, by appending a new directory to the PATH instead of overwriting it as we did above.  So bash interprets `PATH=$PATH:/Users/gdw` as "assign to the variable named PATH the current value of the variable PATH plus ":/Users/gdw" 
 
-After either (or both) of these, jellyfish-macosx should now be in your $PATH.  let's see what happens:
+After either (or both) of these, jellyfish-macosx should now be in your PATH.  let's see what happens when we try to run it:
 
 ```
-which jellyfish-macosx
 jellyfish-macosx
 ```
 
@@ -179,7 +182,7 @@ Arrgh!  This is why people get frustrated with the command line.  Let's power th
 
 #### Permissions
 
-This gets us to another common pitfall for linux beginners: [file permissions](http://linuxcommand.org/lc3_lts0090.php).
+This gets us to another common pitfall: [file permissions](http://linuxcommand.org/lc3_lts0090.php).
 
 Every file and every directory in linux has a set of permissions that tell whether the file or directory can be read, written, or executed.  
 
@@ -190,7 +193,7 @@ Similarly, the jellyfish-macosx file that you downloaded did not arrive with exe
 Let's check the permissions on jellyfish:
 
 ```
-ls -l /usr/local/bin/
+ls -l /usr/local/bin/jellyfish-macosx
 ```
 
 When you list a file using the `-l` option, the first part of the output for each file is the permissions, which look like this:
@@ -199,15 +202,21 @@ When you list a file using the `-l` option, the first part of the output for eac
 -rw-r--r--
 ```
 
-These permissions have this meaning: ![permissions](./file_permissions.png)
+These meaning of these permissions are described [here](https://en.wikipedia.org/wiki/File_system_permissions)
 
-You can see that this file indeed lacks e**x**ecutable permissions.  We can change that by running:
+You can see that the jellyfish-macosx file indeed lacks e**x**ecutable permissions.  We can change that by running:
 
 ```
 chmod +x /usr/local/bin/jellyfish-macosx
 ```
 
 Now try running:
+
+```
+ls -l /usr/local/bin/jellyfish-macosx
+```
+
+Then:
 
 ```
 jellyfish-macosx
@@ -241,7 +250,7 @@ Note that `$HOME` in the above code refers to the value of the environmental var
 You will see a bunch of computer sciencey things print to the terminal as you run this command.  There may be a warning, but there should be no errors, which would indicate that compilation failed.  This compilation process created a binary executable file in the bin directory.  Look at it by running:
 
 ```
-ls bin
+ls -l bin
 ```
 
 This process created a file named jellyfish that is the same size as the jellyfish-macosx file that we downloaded previously.  Let's try running it.  Note that this directory is not in your PATH, so we'll have to refer to it explicitly by running:
@@ -250,7 +259,7 @@ This process created a file named jellyfish that is the same size as the jellyfi
 bin/jellyfish
 ```
 
-You should see the same output as you saw previously. 
+You should see the same output that you saw previously. 
 
 ### Operating more efficiently in the command line environment
 
@@ -265,24 +274,25 @@ There are a number of simple tricks that will enable you to operate more efficie
 
 2. If you are in the middle of a command line, it will complete using the already typed characters and the names of files and directories in your pwd.  
 
-If you hit `tab` one time, and there is an unambiguous matching command or file the could be completed, it will complete it as far as it can until there is ambiguity again.   If you hit `tab` twice, it will show you all the possibly matching files or commands.
+If you hit `tab` one time, and there is an unambiguous matching command or file that could be completed, it will complete it as far as it can until there is ambiguity again.  If you hit `tab` twice, it will show you all the possibly matching files or commands.
 
-For instance, say you want to run bowtie2.  You could type out bowtie2, or you could:
 
 ##### command completion 
+
+For instance, say you want to run bowtie2.  You could type out the program name, or you could:
 
 - enter `bowti` on the command line and hit `tab` once.  It should complete to `bowtie2`
 - try hitting `tab` twice more at this point.  You will see the other commands that begin with bowtie2.
 - enter `b` on the command line and hit `tab` twice.  You will see all the commands that begin with `b`.
 
-##### command completion 
+##### filename completion 
 
 `cd` to get to your home directory.  Then type:
 
 - `ls D` then hit `tab` twice.  You should see Desktop, Downloads, and Documents, which are all the directories that begin w/ D
 - now type `ls De` and hit `tab` once.  This should complete to Desktop, since De is enough to distinguish Desktop from Downloads and Documents.
 
-Becoming comfortable with tab completion will make your life much easier when typing commmands.
+Becoming comfortable with tab completion will make your life much easier when typing commmands.  It also helps you avoid typos that make commands fail.
 
 ### Wildcards
 
@@ -318,7 +328,9 @@ ll
 
 Want to know what the `-G` and `-l` options do for `ls`?  See `man ls`.
 
-Now, with these aliases, when you type `ls`, the shell will replace `ls` with `ls -G`.  And when you type `ll`, it will replace `ll` with `ls -l`, which will in turn be expanded to `ls -G -l`
+Now, with these aliases, when you type `ls`, the shell will replace `ls` with `ls -G`.  And when you type `ll`, it will replace `ll` with `ls -l`, which will in turn be expanded to `ls -G -l` if you've created both the above aliases.
+
+Note that aliases like these will disappear when you close your terminal window and open a new one.  In order to make them persistent, you need to add them to a file in your home directory called `.bashrc`.  [Here's](https://unix.stackexchange.com/questions/129143/what-is-the-purpose-of-bashrc-and-how-does-it-work) some more reading on the subject.
 
 
 ### Connecting to remote servers
@@ -335,7 +347,7 @@ Once logged in, use `ls` to see what files are in the gdw user's home directory 
 
 #### sftp file transfer
 
-`ssh` gives you a remote shell.  `sftp` is a command line tool that allows you to copy files back and forth from remote servers.  (`sftp` is the secure (encrypted) version of `ftp`, **f**ile **t**ransfer **p**rotocol).
+`sftp` is a command line tool that allows you to copy files back and forth from remote servers.  (`sftp` is the secure (encrypted) version of `ftp`, **f**ile **t**ransfer **p**rotocol).
 
 Let's get those dataset (.fastq files) from the cctsi-104 server.  
 
@@ -369,11 +381,12 @@ You might want to run a command again or just remember how you ran a command pre
 
 #### pipes
 
-One really useful feature of bash and similar shells is the ability to use the output of one command as the input of another command.  This process is called piping.  The symbol `|` in bash is called a pipe.  Here's a simple example of how you could pipe 2 commands together:
+One really useful feature of bash and similar shells is the ability to use the output of one command as the input of another command.  This process is called piping.  The symbol `|` in bash is called a pipe.  Here's a simple example of how you could pipe two commands together:
 
 ```
 # show me the files in /usr/local/bin that begin with bowtie
 ls /usr/local/bin/bowtie*
+
 # use the wc -l command to count those files
 ls /usr/local/bin/bowtie* | wc -l
 ```
@@ -385,19 +398,21 @@ ls /usr/local/bin/bowtie* | wc -l
 ```
 # show me the files in /usr/local/bin
 ls /usr/local/bin
+
 # in the output of that command, search for files that match the pattern "bowtie"
 ls /usr/local/bin | grep bowtie
+
 # you can pipe multiple commands together to create a "pipeline"
 ls /usr/local/bin | grep bowtie | wc -l
 ```
 
-Note that this last command did the same thing as `ls /usr/local/bin/bowtie* | wc -l`.  In bash there are often many ways to do the same thing.
+Note that this last command did the same thing as `ls /usr/local/bin/bowtie* | wc -l`, which we ran earlier.  It's also the same as `ls /usr/local/bin/bowtie* | grep -c bowtie`.  In bash there are often many ways to do the same thing.
 
 
 
 ### bash scripting
 
-Any file that you make executable that contains bash commands is a bash script. 
+Any file that contains bash commands is a bash script.  A bash script must have executable permissions to be run.
 
 Let's make some simple scripts to demystify the process.  First, let's make a script that contains the command we use to login to the cctsi-104 remote server.  Open BBEdit, and add the following one line to a file: 
 
@@ -405,7 +420,7 @@ Let's make some simple scripts to demystify the process.  First, let's make a sc
 ssh gdw@cctsi-104.cvmbs.colostate.edu
 ```
 
-Save the file to the Desktop, naming it ssh_104.  
+Save the file to the Desktop, naming it ssh_104 (delete the .txt part of the filename, though it would run fine with that left on).  
 
 Now find the file:
 
@@ -439,12 +454,18 @@ Bash is also a full-fledged scripting language, and your script can include flow
 for bowtie_file in /usr/local/bin/bowtie*
 do
 
-	# $bowtie_file is a variable whose value changes each loop.
+   # $bowtie_file is a variable whose value changes each loop.
    echo "I found this bowtie file in /usr/local/bin: $bowtie_file"
 done
 ```
 
 Save this file to the Desktop, naming it bowtie_script or something like that, give it executable permissions, and run it.  Did it work?
+
+We don't have more time to go into bash scripting today.
+
+
+#### Time permitting, screen
+
 
 
 
