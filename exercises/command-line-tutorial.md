@@ -53,6 +53,10 @@ The `~` always refers to this preset Home location.  Check your location using `
 Great job so far!!!
 
 ### Step 2:  making a directory
+First, let's make sure we are back to the `Desktop` directory:
+```
+cd ~/Desktop
+```
 It is often the case that you will want to make a new directory, and store a bunch of cool files in it.  This is a really easy task.  Simply enter:
 ```
 mkdir Practice
@@ -66,7 +70,7 @@ cd Practice
 ```
 Piece of cake, huh!
 
-### Step3: listing contents
+### Step 3: listing contents
 Now we will look at see which directories and files are inside of a folder.  But first, let's move back to the Desktop.
 ```
 cd ../Desktop
@@ -91,11 +95,17 @@ What about:
 ```
 ls -l Practice
 ```
-If you are ever not sure how to use a command, you can always use the `man` command for a commands manual, or Google (Googling is a GREAT resource).
+If you are ever not sure how to use a command, you can always use the `man` command for a command's manual, or Google (Googling is a GREAT resource).
 ```
 man ls
 ```
 To exit the manual for ls, enter `q`.
+  
+---
+
+___Break time!  Let's reconvene for a minute to make sure we are all on the same page___
+
+---  
 
 ### Step 4: making files
 Before we make some new files, let's move back into our Practice directory:
@@ -107,7 +117,7 @@ Now we can make an empty file called "test.txt" using the `touch` command:
 touch test.txt
 ```
 Now check the contents of our Practice directory using `ls`.  
-How big is this new file? HINT:  use on of the parameters for the `ls` command.  
+How big is this new file? HINT:  use one of the parameters for the `ls` command.  
 File names can actually be whatever you want, and don't require an extension like ".txt". For example:
 ```
 touch test2
@@ -149,7 +159,14 @@ Now, let's move this renamed file to the Desktop:
 mv Desktop.deleteme.txt ..
 ```
 Notice again our use of the `..`.  Nice and quick, eh?  Way easier than dragging and dropping, am I right? (OK... we can perhaps agree to disagree.  But if you have to do that operation 10,000 times...?)
+
 ### Hint:  You can actually drag and drop files and folders from your GUI into the terminal.  Try it out with the `ls` command and the `Practice` folder if you dare!
+
+---
+
+___Break time!  Let's reconvene for a minute to make sure we are all on the same page___  
+
+---  
 
 ### Step 7:  Viewing files
 Since you made all those files, why not look at what's inside?  You could always double-click and open them in a text editor, but this would be boring.  There are many ways to open them on the command line, a few are outlined below.  Try what works best for you:  
@@ -194,7 +211,7 @@ or to write new, custom text into a file:
 ```
 echo "I love NGS" > custom.txt
 ```
-You can then use the `>>` to add new content to an existing file:
+You can then use the `>>` to add new content to the end of an existing file:
 ```
 echo "But Sanger sequencing is cool too" >> custom.txt
 ```
@@ -219,6 +236,19 @@ rm -r Practice
 ```
 Is the `Practice` directory still there?  
 ### Note:  When it is deleted, it is gone for good.  It is not in the trash or Recycle bin.
+
+
+## Test time!
+Now, on your own I want you to:
+1. Create a directory in your Desktop called "GDW_2019_PRACTICE"
+2. Make a file called "sequences.fasta"
+3. Write the sequence "ATGCGT" to the file "sequences.fasta"
+4. Record the file size in bytes.
+
+___What's your answer?___
+_Don't forget to delete the file and folder you made when finished!_
+
+---
 
 ### Great job with the tutorial!  Now everyone is a seasoned computer wizard!
 Below are some extra tips, commands to check out, and links to additional resources to examine in your free time!
@@ -254,7 +284,7 @@ Search a file for a specific pattern (e.g., ATGC):
 ```
 grep "ATGC" file
 ```
-The above command returns the lines that match the pattern  
+The above command returns the lines that match the pattern "ATGC"
 
 Show various columns of a tab-delimited file (e.g., a spreadsheet):
 ```
