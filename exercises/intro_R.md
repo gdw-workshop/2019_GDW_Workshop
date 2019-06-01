@@ -177,9 +177,27 @@ Some functions can also do creative things with strings.  For example, in the ve
 # Modify the 'day' vector
 sub("day", " is fun", day)
 
-# Not sure of all the arguments to 'sub'?
+# Not sure of all the arguments to 'sub'? Read the manual.
 help(sub)
 ```
+
+Existing functions are great (we will learn more about this at the end), but one of the core features of R is the ability to build and customize _your own_ functions! As an example, we are going to build our own custom function to calculate the mean of a vector.  We will talk about this as a class:
+```R
+# Custom function to calculat the mean
+mean.custom <- function(x) {
+   total <- sum(x)
+       n <- length(x)
+     avg <- total / n
+   return(avg)
+}
+```
+Enter the function above into your R script, highlight it, then load it using the `Run` icon.
+Now you can run the function `mean.custom` just like any other function in R!
+```R
+# Calculate the mean of 'count'
+mean.custom(count)
+```
+Did it work?
 
 
 I have included a quick reference guide to common R functions [Here](./Rcard.pdf).  If you are ever unsure of how to use a function, try searching the internet (there are TONS of resources) or use the help menu:
@@ -187,16 +205,4 @@ I have included a quick reference guide to common R functions [Here](./Rcard.pdf
 # Get the help manual for a function
 help(mean)
 ```
-
-
-
-
-
-
-
-
-
-
-
-
 
