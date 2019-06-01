@@ -6,13 +6,23 @@ This morning, Bob introduced you to the concept of a path in unix, and explained
 
 #### absolute paths
 
-Absolute paths start at the root of the filesystem.  In other words, absolute paths start with `/`.  `/Users/gdw/Desktop` is an absolute path. 
+Absolute paths start at the root of the filesystem.  In other words, absolute paths start with `/`.  These are absolute paths:
+
+- `/Users/gdw/Desktop` 
+- `/usr/local/bin`
+- `/Applications`
 
 **Absolute paths always refer to the same place, no matter your present working directory**
 
 #### relative paths
 
-Relative paths don't start with an `/`.   `./Desktop` and `Desktop` and `../Desktop`  are all relative paths.  What they refer to depends on where you are. 
+Relative paths don't start with an `/`.   These are relative paths:
+
+- `./Desktop`
+- `Desktop` 
+- `../Desktop`  
+
+Their meaning is dependent on where you are in the filesystem (i.e., what is your pwd).
 
 **A relative path's meaning depends on your present working directory**
 
