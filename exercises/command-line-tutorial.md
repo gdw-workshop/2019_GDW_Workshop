@@ -237,6 +237,18 @@ rm -r Practice
 Is the `Practice` directory still there?  
 ### Note:  When it is deleted, it is gone for good.  It is not in the trash or Recycle bin.
 
+
+## Test time!
+Now, on your own I want you to:
+1. Create a directory in your Desktop called "GDW_2019_PRACTICE"
+2. Make a file called "sequences.fasta"
+3. Write the sequence "ATGCGT" to the file "sequences.fasta"
+4. Record the file size in bytes.
+
+___What's your answer?___
+
+---
+
 ### Great job with the tutorial!  Now everyone is a seasoned computer wizard!
 Below are some extra tips, commands to check out, and links to additional resources to examine in your free time!
 

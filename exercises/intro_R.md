@@ -145,7 +145,7 @@ Now data frames.  We can combine our two vectors into a data frame.  Enter these
 data <- data.frame(day, count)
 ```
 
-Similar to a vector, you can access specific elements by refering to the specific row and column indices:
+Similar to a vector, you can access specific elements by refering to their row and column indices:
 ```R
 # Get the item in the 3rd row and 2nd column
 data[3,2]
@@ -168,11 +168,35 @@ Notice that the syntax for a function is the name of a function, then some objec
 ```R
 # Get the mean
 mean(count)
+
+# Get the standard deviation
 sd(count)
 ```
+Some functions can also do creative things with strings.  For example, in the vector `day`, replace the text "day" with "is fun":
+```R
+# Modify the 'day' vector
+sub("day", " is fun", day)
+
+# Not sure of all the arguments to 'sub'?
+help(sub)
+```
+
 
 I have included a quick reference guide to common R functions [Here](./Rcard.pdf).  If you are ever unsure of how to use a function, try searching the internet (there are TONS of resources) or use the help menu:
 ```R
 # Get the help manual for a function
 help(mean)
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+
