@@ -246,6 +246,7 @@ Now, on your own I want you to:
 4. Record the file size in bytes.
 
 ___What's your answer?___
+_Don't forget to delete the file and folder you made when finished!_
 
 ---
 
