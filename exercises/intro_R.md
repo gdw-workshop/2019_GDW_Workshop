@@ -183,7 +183,7 @@ help(sub)
 
 Existing functions are great (we will learn more about this at the end), but one of the core features of R is the ability to build and customize _your own_ functions! As an example, we are going to build our own custom function to calculate the mean of a vector.  We will talk about this as a class:
 ```R
-# Custom function to calculat the mean
+# Custom function to calculate the mean
 mean.custom <- function(x) {
    total <- sum(x)
        n <- length(x)
@@ -199,6 +199,10 @@ mean.custom(count)
 ```
 Did it work?
 
+## Part 4: Loading data
+Generally, you will not be manually entering your data into R like we have done above.  It is much more common to load in an existing file, like a spreadsheet from Microsoft Excel or a simple delimited text file (tab or comma delimited). The CSV, or "comma separated values" format is perhaps one of the most common, so we will use that here as an example. First, let's download a practice CSV file from the internet. Click in the link [Here](https://people.sc.fsu.edu/~jburkardt/data/csv/biostats.csv) to download a CSV file called `biostats.csv`.  Don't worry, there are no viruses!
+
+---
 
 I have included a quick reference guide to common R functions [Here](./Rcard.pdf).  If you are ever unsure of how to use a function, try searching the internet (there are TONS of resources) or use the help menu:
 ```R
