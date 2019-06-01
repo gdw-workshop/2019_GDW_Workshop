@@ -208,7 +208,7 @@ curl https://people.sc.fsu.edu/~jburkardt/data/csv/biostats.csv > ~/Downloads/bi
 Navigate to the file in the explorer window on the lower right. Click on the file and select "view file".
 What do the contents look like?
 
-Now let's laod the CSV file into our R environment as a data frame:
+Now let's load the CSV file into our R environment as a data frame (run it from the R script window):
 ```R
 # Read a csv file
 dataset1 <- read.csv("~/Downloads/biostats.csv", header = T)
@@ -221,4 +221,4 @@ I have included a quick reference guide to common R functions [Here](./Rcard.pdf
 # Get the help manual for a function
 help(mean)
 ```
-
+## _Don't forget to save your R script for future reference!!!_
