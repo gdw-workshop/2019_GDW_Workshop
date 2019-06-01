@@ -203,7 +203,15 @@ Did it work?
 iGenerally, you will not be manually entering your data into R like we have done above.  It is much more common to load in an existing file, like a spreadsheet from Microsoft Excel or a simple delimited text file (tab or comma delimited). The CSV, or "comma separated values" format is perhaps one of the most common, so we will use that here as an example. First, let's download a practice CSV file from the internet. Control-Click the link [Here](https://people.sc.fsu.edu/~jburkardt/data/csv/biostats.csv), select "Download Linked File As", then save it to the `Downloads` folder. There should now be a CSV file called `biostats.csv` in the `Downloads` folder.  Don't worry, there are no viruses! If you are really brave, select the "terminal" tab in the lower left, then download on the UNIX command line using
 ```R
 # Download a file from a url to the Downloads folder
-curl https://people.sc.fsu.edu/~jburkardt/data/csv/biostats.csv > ~/Downloads/biostats.csv`.
+curl https://people.sc.fsu.edu/~jburkardt/data/csv/biostats.csv > ~/Downloads/biostats.csv
+```
+Navigate to the file in the explorer window on the lower right. Click on the file and select "view file".
+What do the contents look like?
+
+Now let's laod the CSV file into our R environment as a data frame:
+```R
+# Read a csv file
+dataset1 <- read.csv("~/Downloads/biostats.csv", header = T)
 ```
 
 ---
