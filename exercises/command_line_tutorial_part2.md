@@ -1,8 +1,8 @@
 ## Command-line clinic, continued 
 
-### Paths: absolute, relative, and the $PATH
+### Paths: absolute, relative, and the PATH
 
-This morning, Bob introduced you to the concept of a path in unix, and explained how paths relate to the heirarchical filesystem.  Let's briefly revisit that topicby discussing absolute paths, relative paths, and the $PATH.  
+This morning, Bob introduced you to the concept of a path in unix, and explained how paths relate to the heirarchical filesystem.  Let's briefly revisit that topic by discussing absolute paths, relative paths, and the PATH.  
 
 #### absolute paths
 
@@ -28,11 +28,11 @@ Their meaning is dependent on where you are in the filesystem (i.e., what is you
 
 #### PATH
 
-The PATH has a special meaning in unix environments.  The PATH is a list of directories where the shell will look for commands.  If you didn't have the PATH, you'd always have to type the full path (absolute or relative) of a command to run it, which would be annoying.
+The (upper case) PATH has a special meaning in unix environments.  The PATH is a list of directories where the shell will look for commands.  If you didn't have the PATH, you'd always have to type the full path (absolute or relative) of a command to run it, which would be annoying.
 
 PATH is what's called an [environmental variable](https://en.wikipedia.org/wiki/Environment_variable).  Here are two ways to find your PATH:
 
-- Run the `env` command in the terminal to show all the environmental variables.  Do you see your $PATH?
+- Run the `env` command in the terminal to show all the environmental variables.  Do you see your PATH?
 - Run `echo $PATH` in your terminal.  
 
 Can you recognize what other environmental variables mean?
@@ -141,7 +141,7 @@ What do you think is going on?
 
 <br><br><br><br> <br><br><br><br> <br><br><br><br> <br><br><br><br> 
 
-One issue is that the file jellyfish-macosx is not in your $PATH.  Or more accurately, jellyfish-macosx is in your home directory, which is not in your $PATH.  Let's confirm this by using the which command again:
+One issue is that the file jellyfish-macosx is not in your PATH.  Or more accurately, jellyfish-macosx is in your home directory, which is not in your PATH.  Let's confirm this by using the which command again:
 
 ```
 which jellyfish-macosx
@@ -150,7 +150,7 @@ which jellyfish-macosx
 To fix this situation, we could either move the jellyfish file into a directory in your PATH, or could add your home directory to your PATH.  The first option would manifest as:
 
 ```
-# option 1: move jellyfish to a directory already in your $PATH
+# option 1: move jellyfish to a directory already in your PATH
 sudo mv jellyfish-macosx /usr/local/bin
 ```
 
@@ -160,7 +160,7 @@ Note that you had to use the sudo (**s**uper **u**ser **do**) command to move je
 
 The second option would be:
 ```
-# option 2: add ~ to your $PATH
+# option 2: add ~ to your PATH
 export PATH=$PATH:/Users/gdw
 ```
 
@@ -261,6 +261,8 @@ bin/jellyfish
 
 You should see the same output that you saw previously. 
 
+Note that different software will have different installation / compilation instructions.  Good software has good installation instructions and will hopefully be easy to install.  
+
 ### Operating more efficiently in the command line environment
 
 There are a number of simple tricks that will enable you to operate more efficiently in the command line environment.
@@ -281,7 +283,7 @@ If you hit `tab` one time, and there is an unambiguous matching command or file 
 
 For instance, say you want to run bowtie2.  You could type out the program name, or you could:
 
-- enter `bowti` on the command line and hit `tab` once.  It should complete to `bowtie2`
+- enter `bow` on the command line and hit `tab` once.  It should complete to `bowtie2` because there are no other commands in your PATH that begin with `bow`
 - try hitting `tab` twice more at this point.  You will see the other commands that begin with bowtie2.
 - enter `b` on the command line and hit `tab` twice.  You will see all the commands that begin with `b`.
 
@@ -317,7 +319,7 @@ We will use wildcards more during the workshop.
 
 ### Aliases
 
-Creating command aliases can be a convenient shortcut.  They allow you to define a new command or to redine the meaning of a command, for instance:
+Creating command aliases can be a convenient shortcut.  They allow you to define a new command or to redefine the meaning of a command, for instance:
 
 ```
 alias 'ls=ls -G'
@@ -358,7 +360,7 @@ sftp gdw@cctsi-104.cvmbs.colostate.edu
 `sftp` has some limited shell-like functionality.  For instance, you can `cd`, `ls`, and `pwd` from within your sftp session.  By default, you will be logged into your home directory.  Let's double check that those fastq files are there and then use the `get` command within sftp to transfer them from the remote server to your local computer:
 
 ```
-# within sftp sessions
+# note, here we are within the sftp session
 pwd
 ls 
 # wildcards work within sftp
