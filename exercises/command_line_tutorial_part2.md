@@ -465,9 +465,118 @@ Save this file to the Desktop, naming it bowtie_script or something like that, g
 
 We don't have more time to go into bash scripting today.
 
+### Finding things in Linux 
 
-#### Time permitting, screen
+In this section, we will discuss how to find particular files in linux and also how to find text within files.
+
+#### Finding files in linux
+
+The `find` command is a useful tool for finding files with specific attributes. 
+
+You need to tell find where to look for files and what type of files to look for.  For instance, running this command:
+
+```
+find .
+find /usr/local/
+```
+
+will find and report all the files in the present working directory.
+
+That's not that interesting.  What's more useful is finding a particular type of file.  For instance, we could find all the fastq files in your home directory by running:
+
+```
+# change to your home dir
+cd 
+
+# find files ending with .fastq
+find . -name "*.fastq"
+```
+
+Did you find the 3 files you downloaded with sftp before?  
+
+You can also combine finding files with performing actions on them.  For instance, say we wanted to list the # of lines in each of those fastq files, you could run a find command like this:
+
+```
+find . -name "*.fastq" -exec wc -l {} \;
+```
+
+The -exec option to find allows you run another command on each found file.  Note that the syntax is strange looking and frankly difficult to remember.  I personally have to google it every time I want to do this.
 
 
+`locate` is another linux tool that enables you to find files.  It is like `which`, but doesn't just search the PATH.  It is more like Spotlight in MacOSX.  It works by having a database of all the filenames in the filesystem that it can quickly search for a pattern.  (Unlike Spotlight, it doesn't search the contents of files, though, just the filenames.)
+
+For example:
+
+```
+locate bowtie2
+```
+
+How does the output of this command differ from that of `which bowtie2`?
+
+How might you combine the `grep` command with the find command to search _within_ files?
 
 
+### Time permitting, screen
+
+A common scenario is to connect to a remote server to kick off a long running task like a genome assembly.  In this case, if your connection is not stable, for instance if you connected using ssh over wifi from your laptop, then you risk having the process prematurely stop when your connection closes.  The `screen` utility allows you to establish a more permanent terminal session that will not close when you lose your connection.
+
+Here are some commonly used screen commands:
+```
+# Start a screen session
+screen 
+
+# Start a named screen session
+screen -S my_assembly_session
+
+# Detach from a session.  The detached session will persist even though you are detached from it.
+# You will probably be automatically detached if you lose your connection.
+ctrl-a d  
+
+# exit from a session and close it.
+exit  
+
+# list your screen sessions
+screen -ls --> list sessions
+
+# reattach to a detached session
+screen -r  
+
+# reattach to a named session
+screen -r session_id  
+```
+
+Let's try running screen. 
+
+First, let's start a session and give it a name.  From anywhere:
+
+```
+screen -S session_1
+```
+
+You should see an intro screen.  Press `space` or `enter` to continue.
+
+Let's kick off a long running process.  In this case, let's run the `sleep` command, which does nothing for a specified # of seconds:
+
+```
+# Note that we are running this within a screen session:
+# sleep for 3 minutes
+sleep 180
+```
+
+OK, `sleep` is running.  Let's detach from your screen session by typing `ctrl-A d` (press the `ctrl` and `a` keys simultaneously then press the `d` key by itself).  You should return to the session from which you ran screen.
+
+Let's see if your session is persisting:
+
+```
+screen -ls
+```
+
+Do you see your session?  Let's reattach to it:
+
+```
+screen -r session_1
+```
+
+You should now be back in your session, with the sleep command still sleeping.  
+
+When I run long commands remotely, I almost always do so using `screen`. 
