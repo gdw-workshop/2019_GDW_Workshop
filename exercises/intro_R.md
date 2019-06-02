@@ -217,6 +217,56 @@ dataset1 <- read.csv("~/Downloads/biostats.csv", header = T)
 ## Now it's your turn!
 This is your chance to test your knowledge of what we have learned so far.  The task - build a custom function. The function should be able to calculate the mean ratio of vectors.  In other words, what is the mean ratio of height:weight from the CSV file (`dataset1`)? What about weight:height?  To get you started, your custom function can have multiple arguments, for example `custom.function <- function(x,y) {}`.  Feel free to refer back to the custom function we built earlier for help.  Remember, there are many different ways to do it, so do what makes sense to you.
 
+
+## Part 5: Plotting and Visualizing Data
+R is a great tool for plotting and visualizations.  R can easily render your graphics in many graphical formats (e.g., PNG, JPEG, GIF, EPS, PDF, SVG). The vector graphic formats, such as PDF/EPS/SVG are becoming increasingly required by journals when submitting manuscripts. We will just perform a few quick and simple plotting functions today using our `biostats.csv` data, but as usual, these can become quite complex and customized as needed.  See this [R cheatsheet](./Rcard.pdf) or use Google for more information.
+
+Make a boxplot
+```R
+# Make a boxplot of "Age"
+boxplot(dataset1[,3])
+
+
+# Add some titles
+title(main = "Age", ylab = "Years")
+
+# A different way to do the same thing, but in blue!
+boxplot(dataset1$Age, main = "Age", ylab = "Years", col = "blue")
+
+# Include all 3 numeric columns
+boxplot(dataset1[,3:5], main = "BioStats", col = c("blue", "red", "green"))
+```
+You can save the current plot in a few different ways.  In the lower right window of ___R Studio___, select "Export", then "Save as PDF".  Alternatively, you can run the commands:
+```R
+# Save the current plot
+dev.copy(pdf, file = "boxplot.pdf")
+dev.off()
+```
+
+Make a barplot of "Age", "Height", and "Weight"
+```R
+# Make a barplot
+barplot(dataset1$Age, main = "BioStats", ylab = "Years")
+
+# Make the barplot but the names from the first column and colored
+barplot(dataset1$Age, main = "BioStats", ylab = "Years", names.arg = dataset1$Name, col = 5)
+```
+
+Last, make a scatter plot of Height and Weight
+```R
+# Make a scatter plot
+plot(dataset1$Height..in, dataset1$Weight..lbs., main = "Scatterplot")
+
+# Repeat with different point type and color
+plot(dataset1$Height..in, dataset1$Weight..lbs., main = "Scatterplot", pch = 15, col = "red")
+
+# Get fancy and add a fitted LOWESS curve
+lines(lowess(dataset1$Height..in, dataset1$Weight..lbs.), col = "blue")
+```
+
+## Now it's your turn!!!
+Your task is to make a scatter plot of Age (X-axis) against Height (Y-axis).  Color the points green, and make the points anything you would like (hint, Google search "R pch".  Dont forget to label your plot and the axes!  Add a curve if you dare!
+
 ---
 
 I have included a quick reference guide to common R functions [Here](./Rcard.pdf).  If you are ever unsure of how to use a function, try searching the internet (there are TONS of resources) or use the help menu:
