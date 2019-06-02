@@ -268,9 +268,9 @@ Your task is to make a scatter plot of Age (X-axis) against Height (Y-axis).  Co
 
 
 ## Part 6:  Installing Packages
-R contains thousands upon thousands of sets of functions organized into "Packages".  These packages can be created and submitted by anyone to the primary package repository called [CRAN](https://cran.r-project.org). Another large repository for many bioinformatic packages can be found at [Bioconductor]().  These packages normally have very specific sets of functions, and often are accompanied by a manual, tutorial (called a vinette), and sometimes a scientific publication.  Here we will learn how to install and utilize some customized functions in an R package.
+R contains thousands upon thousands of sets of functions organized into "Packages".  These packages can be created and submitted by anyone to the primary package repository called [CRAN](https://cran.r-project.org). Another large repository for many bioinformatic packages can be found at [Bioconductor](https://bioconductor.org). These packages normally have very specific sets of functions, and often are accompanied by a manual, tutorial (called a vinette), and sometimes a scientific publication.  Here we will learn how to install and utilize some customized functions in an R package.
 
-I actually build an R package called "[OptM](https://CRAN.R-project.org/package=OptM)", which you can read about on the CRAN website link.  Rather than go into details about what it does (see the [README](https://cran.r-project.org/web/packages/OptM/readme/README.html) page), let's just try to install it and test it out.
+I actually built an R package called "[OptM](https://CRAN.R-project.org/package=OptM)", which you can read about on the CRAN website link.  Rather than go into details about what it does (see the [README](https://cran.r-project.org/web/packages/OptM/readme/README.html) page), let's just try to install it and test it out.
 
 ```R
 # Install "OptM" from CRAN
@@ -291,6 +291,18 @@ help(plot_optM)
 ```
 
 Your task now is to run the "Example" command for the functions `optM` and `plot_optM`.  What does your plot look like?
+
+Next, for your reference, we will practice installing a package from [Bioconductor](https://bioconductor.org) called `edgeR`, which is used for RNA-seq analyses..
+```R
+# First, load the Bioconductor installation script
+source("http://bioconductor.org/biocLite.R")
+
+# Then, install the package using BiocLite
+biocLite("edgeR")
+
+# Finally, load the package as before
+library(edgeR)
+```
 
 ---
 
