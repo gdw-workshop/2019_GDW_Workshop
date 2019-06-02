@@ -38,9 +38,10 @@ Time | Activity
 Time | Activity
 --- | ---
 <img width=150/> | <img width=600/>
-**18:30-18:45** | Welcome and Opening Remarks, Sue VandeWoude and Jill Pecon Slattery
-**18:45-19:30** | 10 Attendee Presentations
-**19:30-20:00** | Introduction to the group exercise, Bob Fitak: [Scenarios](./scenarios.pdf) [Powerpoint](./lectures/Fitak_GWD2019_GroupActivity.pdf)  
+**18:30-18:40** | Welcome and Opening Remarks, Sue VandeWoude and Jill Pecon Slattery
+**18:40-18:50** | Instructors and Team Introductions
+**18:50-19:35** | 10 Attendee Presentations
+**19:35-20:00** | Introduction to the group exercise, Bob Fitak: [Scenarios](./scenarios.pdf) [Powerpoint](./lectures/Fitak_GWD2019_GroupActivity.pdf)  
 **20:00-21:30** | Refreshments and Social Time 
 
 
