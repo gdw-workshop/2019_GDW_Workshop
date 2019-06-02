@@ -26,7 +26,7 @@ Time | Activity
 **10:15-11:45** | Bob Fitak - The UNIX Command line [Lecture](./lectures/Fitak_GWD2019_CommandLine.pdf) and [Tutorial](./exercises/command-line-tutorial.md)
 **11:45-12:15** | Mark Stenglein - Principles of Computing [Lecture](./lectures/Stenglein_computing_introduction.pdf)
 **12:15-13:15** | Lunch provided onsite
-**13:15-14:30** | Mark Stenglein - Command Line Utilities: installing programs, scripting, TBD (screen, nohup, PATH)
+**13:15-14:30** | Mark Stenglein - [Command Line Part 2](./exercises/command_line_tutorial_part2.md)
 **14:30-14:45** | Coffee break
 **14:45-16:00** | Bob Fitak - An Introduction to R and R Studio - [Tutorial](./exercises/intro_R.md)
 **18:30-21:30** | *Don't Miss the Opening Reception!!!!*
