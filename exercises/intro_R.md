@@ -157,7 +157,7 @@ col1 <- data[,1]
 row5 <- data[5,]
 ```
 
-# Part 3: Functions
+## Part 3: Functions
 R naturally has numerous functions built-in to speed up your analyses. For example, how many rows and columns are in the `data` variable?  Use the `dim()` function:
 ```R
 # Get the dimensions of a table (rows, columns)
@@ -219,13 +219,12 @@ This is your chance to test your knowledge of what we have learned so far.  The 
 
 
 ## Part 5: Plotting and Visualizing Data
-R is a great tool for plotting and visualizations.  R can easily render your graphics in many graphical formats (e.g., PNG, JPEG, GIF, EPS, PDF, SVG). The vector graphic formats, such as PDF/EPS/SVG are becoming increasingly required by journals when submitting manuscripts. We will just perform a few quick and simple plotting functions today using our `biostats.csv` data, but as usual, these can become quite complex and customized as needed.  See this [R cheatsheet](./Rcard.pdf) or use Google for more information.
+R is a great tool for plotting and visualizations.  R can easily render your graphics in many formats (e.g., PNG, JPEG, GIF, EPS, PDF, SVG). The vector graphic formats, such as PDF/EPS/SVG are becoming increasingly required by journals when submitting manuscripts. We will just perform a few quick and simple plotting functions today using our `biostats.csv` data, but as usual, these can become quite complex and customized as needed.  See this [R cheatsheet](./Rcard.pdf) or use Google for more information.
 
 Make a boxplot
 ```R
 # Make a boxplot of "Age"
 boxplot(dataset1[,3])
-
 
 # Add some titles
 title(main = "Age", ylab = "Years")
@@ -243,12 +242,12 @@ dev.copy(pdf, file = "boxplot.pdf")
 dev.off()
 ```
 
-Make a barplot of "Age", "Height", and "Weight"
+Make a barplot of "Age"
 ```R
 # Make a barplot
 barplot(dataset1$Age, main = "BioStats", ylab = "Years")
 
-# Make the barplot but the names from the first column and colored
+# Make the barplot but with the names from the first column and colored
 barplot(dataset1$Age, main = "BioStats", ylab = "Years", names.arg = dataset1$Name, col = 5)
 ```
 
@@ -265,7 +264,33 @@ lines(lowess(dataset1$Height..in, dataset1$Weight..lbs.), col = "blue")
 ```
 
 ## Now it's your turn!!!
-Your task is to make a scatter plot of Age (X-axis) against Height (Y-axis).  Color the points green, and make the points anything you would like (hint, Google search "R pch".  Dont forget to label your plot and the axes!  Add a curve if you dare!
+Your task is to make a scatter plot of Age (X-axis) against Height (Y-axis).  Color the points green, and make the points anything you would like (hint, Google search "R pch").  Dont forget to label your plot and the axes! Save the plot as a PDF file. Add a curve if you dare!
+
+
+## Part 6:  Installing Packages
+R contains thousands upon thousands of sets of functions organized into "Packages".  These packages can be created and submitted by anyone to the primary package repository called [CRAN](https://cran.r-project.org). Another large repository for many bioinformatic packages can be found at [Bioconductor]().  These packages normally have very specific sets of functions, and often are accompanied by a manual, tutorial (called a vinette), and sometimes a scientific publication.  Here we will learn how to install and utilize some customized functions in an R package.
+
+I actually build an R package called "[OptM](https://CRAN.R-project.org/package=OptM)", which you can read about on the CRAN website link.  Rather than go into details about what it does (see the [README](https://cran.r-project.org/web/packages/OptM/readme/README.html) page), let's just try to install it and test it out.
+
+```R
+# Install "OptM" from CRAN
+install.packages("OptM")
+```
+
+You can also install from ___R Studio___ using the "Packages" tab in the lower right window.
+You only have to install a package once, but you need to load it every time you want to make the functions available for use.  To load it, use:
+```R
+# Load a package
+library(OptM)
+```
+
+To see how some functions in `OptM` work:
+```R
+help(optM)
+help(plot_optM)
+```
+
+Your task now is to run the "Example" command for the functions `optM` and `plot_optM`.  What does your plot look like?
 
 ---
 
