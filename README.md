@@ -28,7 +28,7 @@ Time | Activity
 **12:15-13:15** | Lunch provided onsite
 **13:15-14:30** | Mark Stenglein - Command Line Utilities: installing programs, scripting, TBD (screen, nohup, PATH)
 **14:30-14:45** | Coffee break
-**14:45-16:00** | Bob Fitak - An Introduction to R
+**14:45-16:00** | Bob Fitak - An Introduction to R and R Studio - [Tutorial](./exercises/intro_R.md)
 **18:30-21:30** | *Don't Miss the Opening Reception!!!!*
 </div>
 
