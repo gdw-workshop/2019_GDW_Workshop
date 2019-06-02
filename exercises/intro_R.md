@@ -157,7 +157,7 @@ col1 <- data[,1]
 row5 <- data[5,]
 ```
 
-# Part 3: Functions
+## Part 3: Functions
 R naturally has numerous functions built-in to speed up your analyses. For example, how many rows and columns are in the `data` variable?  Use the `dim()` function:
 ```R
 # Get the dimensions of a table (rows, columns)
@@ -200,7 +200,7 @@ mean.custom(count)
 Did it work?
 
 ## Part 4: Loading data
-iGenerally, you will not be manually entering your data into R like we have done above.  It is much more common to load in an existing file, like a spreadsheet from Microsoft Excel or a simple delimited text file (tab or comma delimited). The CSV, or "comma separated values" format is perhaps one of the most common, so we will use that here as an example. First, let's download a practice CSV file from the internet. Control-Click the link [Here](https://people.sc.fsu.edu/~jburkardt/data/csv/biostats.csv), select "Download Linked File As", then save it to the `Downloads` folder. There should now be a CSV file called `biostats.csv` in the `Downloads` folder.  Don't worry, there are no viruses! If you are really brave, select the "terminal" tab in the lower left, then download on the UNIX command line using
+Generally, you will not be manually entering your data into R like we have done above.  It is much more common to load in an existing file, like a spreadsheet from Microsoft Excel or a simple delimited text file (tab or comma delimited). The CSV, or "comma separated values" format is perhaps one of the most common, so we will use that here as an example. First, let's download a practice CSV file from the internet. Control-Click the link [Here](https://people.sc.fsu.edu/~jburkardt/data/csv/biostats.csv), select "Download Linked File As", then save it to the `Downloads` folder. There should now be a CSV file called `biostats.csv` in the `Downloads` folder.  Don't worry, there are no viruses! If you are really brave, select the "terminal" tab in the lower left, then download on the UNIX command line using
 ```R
 # Download a file from a url to the Downloads folder
 curl https://people.sc.fsu.edu/~jburkardt/data/csv/biostats.csv > ~/Downloads/biostats.csv
@@ -212,6 +212,102 @@ Now let's load the CSV file into our R environment as a data frame (run it from 
 ```R
 # Read a csv file
 dataset1 <- read.csv("~/Downloads/biostats.csv", header = T)
+```
+
+## Now it's your turn!
+This is your chance to test your knowledge of what we have learned so far.  The task - build a custom function. The function should be able to calculate the mean ratio of vectors.  In other words, what is the mean ratio of height:weight from the CSV file (`dataset1`)? What about weight:height?  To get you started, your custom function can have multiple arguments, for example `custom.function <- function(x,y) {}`.  Feel free to refer back to the custom function we built earlier for help.  Remember, there are many different ways to do it, so do what makes sense to you.
+
+
+## Part 5: Plotting and Visualizing Data
+R is a great tool for plotting and visualizations.  R can easily render your graphics in many formats (e.g., PNG, JPEG, GIF, EPS, PDF, SVG). The vector graphic formats, such as PDF/EPS/SVG are becoming increasingly required by journals when submitting manuscripts. We will just perform a few quick and simple plotting functions today using our `biostats.csv` data, but as usual, these can become quite complex and customized as needed.  See this [R cheatsheet](./Rcard.pdf) or use Google for more information.
+
+Make a boxplot
+```R
+# Make a boxplot of "Age"
+boxplot(dataset1[,3])
+
+# Add some titles
+title(main = "Age", ylab = "Years")
+
+# A different way to do the same thing, but in blue!
+boxplot(dataset1$Age, main = "Age", ylab = "Years", col = "blue")
+
+# Include all 3 numeric columns
+boxplot(dataset1[,3:5], main = "BioStats", col = c("blue", "red", "green"))
+```
+You can save the current plot in a few different ways.  In the lower right window of ___R Studio___, select "Export", then "Save as PDF".  Alternatively, you can run the commands:
+```R
+# Save the current plot
+dev.copy(pdf, file = "boxplot.pdf")
+dev.off()
+```
+
+Make a barplot of "Age"
+```R
+# Make a barplot
+barplot(dataset1$Age, main = "BioStats", ylab = "Years")
+
+# Make the barplot but with the names from the first column and colored
+barplot(dataset1$Age, main = "BioStats", ylab = "Years", names.arg = dataset1$Name, col = 5)
+```
+
+Last, make a scatter plot of Height and Weight
+```R
+# Make a scatter plot
+plot(dataset1$Height..in, dataset1$Weight..lbs., main = "Scatterplot")
+
+# Repeat with different point type and color
+plot(dataset1$Height..in, dataset1$Weight..lbs., main = "Scatterplot", pch = 15, col = "red")
+
+# Get fancy and add a fitted LOWESS curve
+lines(lowess(dataset1$Height..in, dataset1$Weight..lbs.), col = "blue")
+```
+
+## Now it's your turn!!!
+Your task is to make a scatter plot of Age (X-axis) against Height (Y-axis).  Color the points green, and make the points anything you would like (hint, Google search "R pch").  Dont forget to label your plot and the axes! Save the plot as a PDF file. Add a curve if you dare!
+
+
+## Part 6:  Installing Packages
+R contains thousands upon thousands of sets of functions organized into "Packages".  These packages can be created and submitted by anyone to the primary package repository called [CRAN](https://cran.r-project.org). Another large repository for many bioinformatic packages can be found at [Bioconductor](https://bioconductor.org). These packages normally have very specific sets of functions, and often are accompanied by a manual, tutorial (called a vinette), and sometimes a scientific publication.  Here we will learn how to install and utilize some customized functions in an R package.
+
+I actually built an R package called "[OptM](https://CRAN.R-project.org/package=OptM)", which you can read about on the CRAN website link.  Rather than go into details about what it does (see the [README](https://cran.r-project.org/web/packages/OptM/readme/README.html) page), let's just try to install it and test it out.
+
+```R
+# Install "OptM" from CRAN
+install.packages("OptM")
+```
+
+You can also install from ___R Studio___ using the "Packages" tab in the lower right window.
+You only have to install a package once, but you need to load it every time you want to make the functions available for use.  To load it, use:
+```R
+# Load a package
+library(OptM)
+```
+
+To see how some functions in `OptM` work:
+```R
+help(optM)
+help(plot_optM)
+```
+
+Your task now is to run the "Example" command for the functions `optM` and `plot_optM`.  What does your plot look like?
+Does it look like this?
+
+![optm](./optm.png)
+
+Next, for your reference, we will practice installing a package from [Bioconductor](https://bioconductor.org) called `edgeR`, which is used for RNA-seq analyses..
+```R
+# First, load the Bioconductor installation script
+source("http://bioconductor.org/biocLite.R")
+
+# Then, install the package using BiocLite
+biocLite("edgeR")
+
+# Finally, load the package as before
+library(edgeR)
+
+# Get the help menu
+help(edgeR)
 ```
 
 ---

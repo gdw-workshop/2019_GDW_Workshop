@@ -1,5 +1,4 @@
-# 2019_GDW_Workshop
-Content for the 2019 Genomics of Disease in Wildlife Workshop
+# 2019 Genomics of Disease in Wildlife Workshop
 
 <img src="http://gdwworkshop.colostate.edu/media/sites/131/2016/11/GDW.png">
 
@@ -7,12 +6,11 @@ Content for the 2019 Genomics of Disease in Wildlife Workshop
 
 [Course agenda (pdf)](./GDW2019_Agenda.pdf)
 
-### This page contains the workshop agenda and links to course material 
+#### Course Content and Tentative Schedule
+
+_Schedule will be continuously updated so check back often!_
 
 We will post as much material as possible as soon as possible. Our intent is to leave this material online indefinitely.
-
-
-
 
 ### Sunday June 2, 2019. Pre-workshop clinic and Opening Reception 
 Room 304-306 and Longs Peak Room, Lory Center
@@ -25,13 +23,13 @@ Time | Activity
 --- | ---
 <img width=150/> | <img width=600/>
 **10:00-10:15** | Opening Remarks - Introduction to the Lab Computers
-**10:15-11:45** | Bob Fitak - The UNIX Command line [Lecture](./lectures/Fitak_GWD2019_CommandLine.pdf) and computer [Tutorial](./exercises/command-line-tutorial.md)
+**10:15-11:45** | Bob Fitak - The UNIX Command line [Lecture](./lectures/Fitak_GWD2019_CommandLine.pdf) and [Tutorial](./exercises/command-line-tutorial.md)
 **11:45-12:15** | Mark Stenglein - Principles of Computing [Lecture](./lectures/Stenglein_computing_introduction.pdf)
 **12:15-13:15** | Lunch provided onsite
 **13:15-14:30** | Mark Stenglein - Command Line Utilities: installing programs, scripting, TBD (screen, nohup, PATH)
 **14:30-14:45** | Coffee break
-**14:45-16:00** | Bob Fitak - An Introduction to R
-**18:30-21:30** | *Dont Miss the Opening Reception!!!!*
+**14:45-16:00** | Bob Fitak - An Introduction to R and R Studio - [Tutorial](./exercises/intro_R.md)
+**18:30-21:30** | *Don't Miss the Opening Reception!!!!*
 </div>
 
 
@@ -40,9 +38,10 @@ Time | Activity
 Time | Activity
 --- | ---
 <img width=150/> | <img width=600/>
-**18:30-18:45** | Welcome and Opening Remarks, Sue VandeWoude and Jill Pecon Slattery
-**18:45-19:30** | 10 Attendee Presentations
-**19:30-20:00** | Introduction of the Best Practices workflow group exercise, Bob Fitak: [Scenarios](./GDW_2019_scenarios.pdf) [Powerpoint](./lectures/Fitak_GWD2018_GroupActivity.pdf)  
+**18:30-18:40** | Welcome and Opening Remarks, Sue VandeWoude and Jill Pecon Slattery
+**18:40-18:50** | Instructors and Team Introductions
+**18:50-19:35** | 10 Attendee Presentations
+**19:35-20:00** | Introduction to the group exercise, Bob Fitak: [Scenarios](./scenarios.pdf) [Powerpoint](./lectures/Fitak_GWD2019_GroupActivity.pdf)  
 **20:00-21:30** | Refreshments and Social Time 
 
 
@@ -57,35 +56,36 @@ Time | Activity
 **08:15-08:25** | Step 1: What are my NGS tools for wildlife disease research? Jill Pecon Slattery
 **08:25-08:35** | Introduction to workshop computers, Joe Strecker
 **08:35-10:00** | [Intro to genomics and NGS](./lectures/Stenglein_introduction_to_genomics_and_sequencing_lecture.pdf), Mark Stenglein 
-**10:00-10:20** | Coffee Break and Meet Invited Speaker
-**10:20-12:15** | [BLAST lecture](./lectures/Fitak_GWD2018_Blast.pdf), Bob Fitak
+**10:00-10:20** | Coffee Break
+**10:20-12:15** | BLAST [Lecture](./lectures/Fitak_GWD2018_Blast.pdf) and [Tutorial](./exercises/Blast_exercise.md), Bob Fitak
 **12:15-13:15** | Lunch Provided Onsite
 **13:15-14:15** | 10 Attendee Presentations
-**14:15-15:15** | [BLAST exercises](./exercises/Blast_exercise.md), Bob Fitak 
-**15:35-16:00** | [Obtaining data](./lectures/Stenglein_databases_lecture.pdf) and [data quality control lectures](./lectures/Fitak_GWD2019_NGS-QC.pdf) and [exercises](./exercises/download_exercise.md), Mark Stenglein and Bob Fitak
+**14:15-14:45** | [Obtaining data](./lectures/Stenglein_databases_lecture.pdf), Mark Stenglein
+**14:45-15:30** | Data Quality Control [Lecture](./lectures/Fitak_GWD2019_NGS-QC.pdf) and [Exercise](./exercises/download_exercise.md), Bob Fitak
+**15:30-16:00** | Group projects time
 **16:00-17:00** | Tour of CSU Veterinary Teaching Hospital
 **17:00-19:00** | Free time and dinner, Rams Horn Dining Center 
 **19:30-21:00** | Optional computer time with instructors
 
 
 
-### Tuesday June 4, 2019: Genome Assembly, Whole Genome Alignments, Metagenomics
+### Tuesday June 4, 2019: Genome Mapping, Assembly, and Metagenomics
 
 Time | Activity
 --- | ---
 <img width=150/> | <img width=600/>
 **07:00–08:00** | Breakfast, Rams Horn Dining Center
 **08:15-08:25** | Step 2: Best Practices for Generating Quality Genomes of Host and Pathogen, Jill Pecon Slattery
-**08:25-09:30** | [Mapping to Reference Genomes](./lectures/Fitak_GWD2019_Mapping.pdf), Bob Fitak
+**08:25-09:30** | Mapping to Reference Genomes [Lecture](./lectures/Fitak_GWD2019_Mapping.pdf), Bob Fitak
 **09:30-10:00** | Flash Talk, Karen Fox, CO Parks & Wildlife
 **10:00-10:20** | Coffee Break and Meet Invited Speaker
-**10:20-11:15** | [Mapping Exercises](./exercises/mapping_assembly_exercise.md), Bob Fitak and Mark Stenglein
-**11:15-12:15** | [Genome Assembly lecture](./lectures/Stenglein_de_novo_assembly_lecture.pdf), Mark Stenglein
+**10:20-11:15** | Mapping [Exercise](./exercises/mapping_assembly_exercise.md), Bob Fitak and Mark Stenglein
+**11:15-12:15** | Genome Assembly [Lecture](./lectures/Stenglein_de_novo_assembly_lecture.pdf), Mark Stenglein
 **12:15-13:15** | Lunch Provided Onsite
-**13:15-15:15** | [Genome assembly exercises](./exercises/mapping_assembly_exercise.md), Mark Stenglein and Bob Fitak
+**13:15-15:15** | Genome Assembly [Exercise](./exercises/mapping_assembly_exercise.md), Mark Stenglein and Bob Fitak
 **15:15-15:35** | Coffee Break
-**15:35-16:35** | [Genome assembly exercises continued](./exercises/hybrid_assembly_exercise.md), and [metagenomics and disease lecture](./lectures/Stenglein_metagenomics_lecture.pdf), Mark Stenglein and Bob Fitak
-**16:35-17:00** | Group project time
+**15:35-16:35** | Genome Assembly [exercises](./exercises/hybrid_assembly_exercise.md) continued, and Metagenomics and Disease [Lecture](./lectures/Stenglein_metagenomics_lecture.pdf), Mark Stenglein and Bob Fitak
+**16:35-17:00** | Group projects time
 **17:00-19:00** | Free time and dinner, Rams Horn Dining Center 
 **19:30-20:30** | Plenary Speaker, Loren Cassin-Sackett, University of South Florida
 **20:30-22:00** | Social Hour with Invited Speaker

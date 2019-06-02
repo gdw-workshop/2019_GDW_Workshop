@@ -241,7 +241,7 @@ Is the `Practice` directory still there?
 ## Test time!
 Now, on your own I want you to:
 1. Create a directory in your Desktop called "GDW_2019_PRACTICE"
-2. Make a file called "sequences.fasta"
+2. Make a file called "sequences.fasta" in this new folder.
 3. Write the sequence "ATGCGT" to the file "sequences.fasta"
 4. Record the file size in bytes.
 
