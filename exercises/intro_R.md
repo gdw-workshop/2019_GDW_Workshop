@@ -215,7 +215,7 @@ dataset1 <- read.csv("~/Downloads/biostats.csv", header = T)
 ```
 
 ## Now it's your turn!
-This is your chance to test your knowledge of what we have learned so far.  The task - build a custom function. The function should be able to calculate the mean ratio of vectors.  In other words, what is the mean ratio of height:weight from the CSV file (`dataset1`)? What about weight:height?  To get you started, your cust function can have multiple arguments, for example `custom.function <- function(x,y) {}`.  Feel free to refer back to the custom function we built earlier for help.  Remember, there are many different ways to do it, so do what makes sense to you.
+This is your chance to test your knowledge of what we have learned so far.  The task - build a custom function. The function should be able to calculate the mean ratio of vectors.  In other words, what is the mean ratio of height:weight from the CSV file (`dataset1`)? What about weight:height?  To get you started, your custom function can have multiple arguments, for example `custom.function <- function(x,y) {}`.  Feel free to refer back to the custom function we built earlier for help.  Remember, there are many different ways to do it, so do what makes sense to you.
 
 ---
 
