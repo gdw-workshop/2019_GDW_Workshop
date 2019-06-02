@@ -200,7 +200,7 @@ mean.custom(count)
 Did it work?
 
 ## Part 4: Loading data
-iGenerally, you will not be manually entering your data into R like we have done above.  It is much more common to load in an existing file, like a spreadsheet from Microsoft Excel or a simple delimited text file (tab or comma delimited). The CSV, or "comma separated values" format is perhaps one of the most common, so we will use that here as an example. First, let's download a practice CSV file from the internet. Control-Click the link [Here](https://people.sc.fsu.edu/~jburkardt/data/csv/biostats.csv), select "Download Linked File As", then save it to the `Downloads` folder. There should now be a CSV file called `biostats.csv` in the `Downloads` folder.  Don't worry, there are no viruses! If you are really brave, select the "terminal" tab in the lower left, then download on the UNIX command line using
+Generally, you will not be manually entering your data into R like we have done above.  It is much more common to load in an existing file, like a spreadsheet from Microsoft Excel or a simple delimited text file (tab or comma delimited). The CSV, or "comma separated values" format is perhaps one of the most common, so we will use that here as an example. First, let's download a practice CSV file from the internet. Control-Click the link [Here](https://people.sc.fsu.edu/~jburkardt/data/csv/biostats.csv), select "Download Linked File As", then save it to the `Downloads` folder. There should now be a CSV file called `biostats.csv` in the `Downloads` folder.  Don't worry, there are no viruses! If you are really brave, select the "terminal" tab in the lower left, then download on the UNIX command line using
 ```R
 # Download a file from a url to the Downloads folder
 curl https://people.sc.fsu.edu/~jburkardt/data/csv/biostats.csv > ~/Downloads/biostats.csv
@@ -213,6 +213,9 @@ Now let's load the CSV file into our R environment as a data frame (run it from 
 # Read a csv file
 dataset1 <- read.csv("~/Downloads/biostats.csv", header = T)
 ```
+
+## Now it's your turn!
+This is your chance to test your knowledge of what we have learned so far.  The task - build a custom function. The function should be able to calculate the mean ratio of vectors.  In other words, what is the mean ratio of height:weight from the CSV file (`dataset1`)? What about weight:height?  To get you started, your cust function can have multiple arguments, for example `custom.function <- function(x,y) {}`.  Feel free to refer back to the custom function we built earlier for help.  Remember, there are many different ways to do it, so do what makes sense to you.
 
 ---
 
