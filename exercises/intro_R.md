@@ -302,6 +302,9 @@ biocLite("edgeR")
 
 # Finally, load the package as before
 library(edgeR)
+
+# Get the help menu
+help(edgeR)
 ```
 
 ---
