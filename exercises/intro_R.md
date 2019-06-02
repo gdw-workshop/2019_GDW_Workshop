@@ -291,6 +291,9 @@ help(plot_optM)
 ```
 
 Your task now is to run the "Example" command for the functions `optM` and `plot_optM`.  What does your plot look like?
+Does it look like this?
+
+![optm](./optm.png)
 
 Next, for your reference, we will practice installing a package from [Bioconductor](https://bioconductor.org) called `edgeR`, which is used for RNA-seq analyses..
 ```R
