@@ -197,14 +197,14 @@ What do the output files look like?  Can you open them?
 Let's select some random sequences from the transcriptome to use as a query.  We will use the [seqtk](https://github.com/lh3/seqtk) toolkit from Heng Li. This toolkit is fast and a standard for basic processing of sequence files (fasta and fastq).
 ```bash
 # Get a list of the subprograms in 'seqtk'
-/Users/gdw/Desktop/GDW_Apps/seqtk/seqtk
+seqtk
 
 # Get the manual for a particular sub-program of 'seqtk'
-/Users/gdw/Desktop/GDW_Apps/seqtk/seqtk sample
-/Users/gdw/Desktop/GDW_Apps/seqtk/seqtk seq
+seqtk sample
+seqtk seq
 
 # Select 5 sequences at random
-/Users/gdw/Desktop/GDW_Apps/seqtk/seqtk sample GECA01.1.fsa_nt 5 > sample5.fasta
+seqtk sample GECA01.1.fsa_nt 5 > sample5.fasta
 
 # Remember how to check the number of sequences?
 grep -c "^>" sample5.fasta
