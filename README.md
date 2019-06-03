@@ -53,7 +53,7 @@ Time | Activity
 --- | ---
 <img width=150/> | <img width=600/>
 **07:00–08:00** | Breakfast, Rams Horn Dining Center
-**08:15-08:25** | Step 1: What are my NGS tools for wildlife disease research? Jill Pecon Slattery
+**08:15-08:25** | [Step 1: What are my NGS tools for wildlife disease research?](./lectures/Introduction_GDW2019.pdf) Jill Pecon Slattery
 **08:25-08:35** | Introduction to workshop computers, Joe Strecker
 **08:35-10:00** | [Intro to genomics and NGS](./lectures/Stenglein_introduction_to_genomics_and_sequencing_lecture.pdf), Mark Stenglein 
 **10:00-10:20** | Coffee Break
