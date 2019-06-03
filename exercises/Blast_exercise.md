@@ -82,7 +82,8 @@ This should be saved in the downloads folder as "sequence.fasta"
 Now let's BLAST!!!
 ```
 # First, let's make sure we are starting from the Desktop
-cd /Users/instructor/Desktop
+cd
+cd Desktop
 
 # Make a new folder and move into it
 mkdir BLAST_PRACTICE
@@ -116,7 +117,7 @@ blastp \
    -entrez_query "Alpaca[ORGN]"
 
 ```
-The \ at the end of the line tells the computer that the command will continue onto the next line. This notation can help make really long commands look cleaner and easier to understand. For example, the commands  
+The `\` at the end of the line tells the computer that the command will continue onto the next line. This notation can help make really long commands look cleaner and easier to understand. For example, the commands  
 ```
 head camel_ferritin.blastout
 ```
@@ -146,7 +147,7 @@ blastp \
    -db refseq_protein \
    -remote \
    -num_alignments 10 \
-   -outfmt 6 \
+   -outfmt 7 \
    -out camel_ferritin.blastout.tsv
 ```
 Open the contents of the new output file.
@@ -156,14 +157,14 @@ What is different?  What does the 'num_alignments' parameter mean? Do you think 
 The remote blast above is convenient, but when no internet connection is available, or when there are thousands of sequences, this may not be optimal.  In these cases and many others, it is easiest to build your own BLAST database and perform the search on your own computer.
 
 In this section, we are going to download the transcriptome (remember what a 'transcriptome' is?) from the pathogen *Trichinella patagoniensis*.  [Krivokapich et al, 2012 doi:10.1016/j.ijpara.2012.07.009](http://www.sciencedirect.com/science/article/pii/S0020751912001932). This genus of nematode worms causes the disease trichinellosis, and infect and/or are transmitted between a variety of mammals, including humans. This particular species was described from South American pumas. We will download the transcriptome from NCBI's Transcriptome Shotgun Assembly ([TSA](https://www.ncbi.nlm.nih.gov/genbank/tsa/)) database.
-From the above link:
+From this [TSA](https://www.ncbi.nlm.nih.gov/genbank/tsa/) link (I recommend to "control+click" on the link then select "Open Link in New Tab":
 - Search for accession GECA00000000.1
 - Click on contig link at bottom (To the right of "TSA"), it looks like [GECA01000001-GECA01039180](https://www.ncbi.nlm.nih.gov/Traces/wgs?val=GECA01)
 - Go to download tab
 - Click and download fasta link (GECA01.1.fsa\_nt.gz)
 - Move the downloaded file into your current directory
 ```
-mv /Users/instructor/Downloads/GECA01.1.fsa_nt.gz .
+mv /Users/gdw/Downloads/GECA01.1.fsa_nt.gz .
 ```
 
 Alternatively, you can download directly from the command line using the command below:
