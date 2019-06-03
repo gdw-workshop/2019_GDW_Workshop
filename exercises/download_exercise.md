@@ -105,7 +105,7 @@ Trimmomatic has _a lot_ of options, described [here](http://www.usadellab.org/cm
 We will run this command to trim our reads:
 
 ```
-java -jar ~/Desktop/GDW_Apps/Trimmomatic-0.36/trimmomatic-0.36.jar PE  SRR1984309_1.fastq SRR1984309_2.fastq SRR1984309_1_trimmed.fastq SRR1984309_1_trimmed_unpaired.fastq SRR1984309_2_trimmed.fastq SRR1984309_2_trimmed_unpaired.fastq ILLUMINACLIP:../Desktop/GDW_Apps/Trimmomatic-0.36/adapters/NexteraPE-PE.fa:2:30:10 LEADING:20 TRAILING:20 SLIDINGWINDOW:4:20 MINLEN:60 
+java -jar ~/Desktop/GDW_Apps/Trimmomatic-0.39/trimmomatic-0.39.jar PE  SRR1984309_1.fastq SRR1984309_2.fastq SRR1984309_1_trimmed.fastq SRR1984309_1_trimmed_unpaired.fastq SRR1984309_2_trimmed.fastq SRR1984309_2_trimmed_unpaired.fastq ILLUMINACLIP:../Desktop/GDW_Apps/Trimmomatic-0.36/adapters/NexteraPE-PE.fa:2:30:10 LEADING:20 TRAILING:20 SLIDINGWINDOW:4:20 MINLEN:60 
 ``` 
 
 
