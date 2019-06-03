@@ -32,7 +32,7 @@ The BLAST+ suite comes with the following tools.  We won't use all of them, but 
 We will be using the 'terminal' on the mac. Please don't hesitate to ask if you have any questions regarding commands, parameters, etc.  
 Open up the terminal as you learned previously.  
 Here is a quick reminder of some basic commands (no need to enter them now).
-```
+```bash
 # How to get the manual or help menu for a command/program ("grep" example)
 man grep
 grep -h
@@ -80,7 +80,7 @@ Wild camel (*Camelus ferus*) ferritin light chain protein [XP_014416718.1](https
 Select -> Send To -> File -> Format: fasta  
 This should be saved in the downloads folder as "sequence.fasta"  
 Now let's BLAST!!!
-```
+```bash
 # First, let's make sure we are starting from the Desktop
 cd
 cd Desktop
@@ -128,7 +128,7 @@ head \
 ```
 are equivalent.
 This search should take a couple minutes at most.  Feel free to try and modify the above command to search your favorite taxonomic group. Open the contents of the files and explore:
-```
+```bash
 # Open the second blast result file to the screen
 cat alpaca_ferritins.blastout
 
@@ -140,7 +140,7 @@ less -S alpaca_ferritins.blastout
 The results look good. How many matches did you find in each file (hint, try counting lines using the command `wc -l`)?
 However, this output format can be difficult to parse if we have thousands and thousands of sequences.
 Let's repeat the search again, but this time with some changes.
-```
+```bash
 # New Blast Search
 blastp \
    -query camel_ferritin.faa \
@@ -163,17 +163,17 @@ From this [TSA](https://www.ncbi.nlm.nih.gov/genbank/tsa/) link (I recommend to 
 - Go to download tab
 - Click and download fasta link (GECA01.1.fsa\_nt.gz)
 - Move the downloaded file into your current directory
-```
+```bash
 mv /Users/gdw/Downloads/GECA01.1.fsa_nt.gz .
 ```
 
 Alternatively, you can download directly from the command line using the command below:
-```
+```bash
 curl -O ftp://ftp.ncbi.nlm.nih.gov/sra/wgs_aux/GE/CA/GECA01/GECA01.1.fsa_nt.gz
 ```
 Easy, huh!  
 Now let's process the data and build a blastable database
-```
+```bash
 # Uncompress the file.  What format is it?
 gunzip GECA01.1.fsa_nt.gz
 
@@ -195,42 +195,42 @@ makeblastdb \
 What do the output files look like?  Can you open them?
 
 Let's select some random sequences from the transcriptome to use as a query.  We will use the [seqtk](https://github.com/lh3/seqtk) toolkit from Heng Li. This toolkit is fast and a standard for basic processing of sequence files (fasta and fastq).
-```
+```bash
 # Get a list of the subprograms in 'seqtk'
-/Users/instructor/Desktop/GDW_Apps/seqtk/seqtk
+/Users/gdw/Desktop/GDW_Apps/seqtk/seqtk
 
 # Get the manual for a particular sub-program of 'seqtk'
-/Users/instructor/Desktop/GDW_Apps/seqtk/seqtk sample
-/Users/instructor/Desktop/GDW_Apps/seqtk/seqtk seq
+/Users/gdw/Desktop/GDW_Apps/seqtk/seqtk sample
+/Users/gdw/Desktop/GDW_Apps/seqtk/seqtk seq
 
 # Select 5 sequences at random
-/Users/instructor/Desktop/GDW_Apps/seqtk/seqtk sample GECA01.1.fsa_nt 5 > sample5.fasta
+/Users/gdw/Desktop/GDW_Apps/seqtk/seqtk sample GECA01.1.fsa_nt 5 > sample5.fasta
 
 # Remember how to check the number of sequences?
 grep -c "^>" sample5.fasta
 ```
 Next, we are going to blast these 5 sequences against the transcriptome database we made. What do you expect to find?
-```
+```bash
 blastn \
    -query sample5.fasta \
    -db Tpat \
    -out sample5.blastout \
-   -outfmt 6
+   -outfmt 7
 ```
 How many hits are there in total?
 Let's repeat but filter for only the extremely small e-values.
 Do you expect more matches or fewer matches?
-```
+```bash
 blastn \
    -query sample5.fasta \
    -db Tpat \
    -out sample5.blastout2 \
-   -outfmt 6 \
+   -outfmt 7 \
    -evalue 1e-50
 ```
 For the last part, we are going to retrieve the sequences for our matches from the above BLAST search.
 To do this, we need to make a list of the accession numbers of our matches (This only works if we built the database using the 'parse_seqids' parameter), and then retrieve the matching sequences.
-```
+```bash
 # Grab the second column from the blast results
 cut -f2 sample5.blastout2 > matches.list
 
