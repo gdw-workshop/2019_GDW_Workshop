@@ -215,9 +215,9 @@ blastn \
    -query sample5.fasta \
    -db Tpat \
    -out sample5.blastout \
-   -outfmt 7
+   -outfmt 6
 ```
-How many hits are there in total?
+How many hits are there in total?  Notice that now the output format is type "6" and not "7".  What is different between these formats (hint: check `blastn -help`)?
 Let's repeat but filter for only the extremely small e-values.
 Do you expect more matches or fewer matches?
 ```bash
@@ -225,7 +225,7 @@ blastn \
    -query sample5.fasta \
    -db Tpat \
    -out sample5.blastout2 \
-   -outfmt 7 \
+   -outfmt 6 \
    -evalue 1e-50
 ```
 For the last part, we are going to retrieve the sequences for our matches from the above BLAST search.
