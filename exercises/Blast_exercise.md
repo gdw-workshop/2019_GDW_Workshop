@@ -101,7 +101,7 @@ blastp -help
 # Now Blast to the refseq-protein database
 blastp \
    -query camel_ferritin.faa \
-   -db refseq_protein \
+   -db swissprot \
    -remote \
    -out camel_ferritin.blastout
 
@@ -111,7 +111,7 @@ cat camel_ferritin.blastout
 # Repeat the above search, but limit it to a specific species, e.g. alpacas
 blastp \
    -query camel_ferritin.faa \
-   -db refseq_protein \
+   -db swissprot \
    -remote \
    -out alpaca_ferritins.blastout \
    -entrez_query "Alpaca[ORGN]"
@@ -144,7 +144,7 @@ Let's repeat the search again, but this time with some changes.
 # New Blast Search
 blastp \
    -query camel_ferritin.faa \
-   -db refseq_protein \
+   -db swissprot \
    -remote \
    -num_alignments 10 \
    -outfmt 7 \
