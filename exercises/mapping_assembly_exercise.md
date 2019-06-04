@@ -161,7 +161,7 @@ After SPAdes finishes, there will be output files in the `SRR1984309_spades_asse
 - scaffolds.fasta: scaffolds in FASTA format
 - assembly_graph.fastg:   de bruijn graphs used to create contigs.  Can be visualized using a tool like [Bandage](https://rrwick.github.io/Bandage/)
 
-Let's look at the contigs in contigs.fasta.  Navigate to that file in the Finder and open it using a text editor like TextWrangler or TextEdit.
+Let's look at the contigs in contigs.fasta.  Navigate to that file in the Finder and open it using a text editor like BBEdit.
 
 The contigs are sorted in order of length.  Recall that these are contigs made from the reads that _didn't_ map to the boa constrictor genome. Let's try to figure out what some of the contigs are.
 
