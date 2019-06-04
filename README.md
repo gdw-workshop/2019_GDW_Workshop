@@ -76,7 +76,7 @@ Time | Activity
 <img width=150/> | <img width=600/>
 **07:00–08:00** | Breakfast, Rams Horn Dining Center
 **08:15-08:25** | Step 2: Best Practices for Generating Quality Genomes of Host and Pathogen, Jill Pecon Slattery
-**08:25-09:30** | Mapping to Reference Genomes [Lecture](./lectures/Fitak_GWD2019_Mapping.pdf), Bob Fitak
+**08:25-09:30** | Mapping to Reference Genomes [Lecture](./lectures/Fitak_GWD2019_Mapping.pdf), Bob Fitak (Mapping activity [Template 1](./exercises/magnet-sheet.pdf) and [Template 2](./exercises/Puzzle_mapping.pdf)
 **09:30-10:00** | Flash Talk, Karen Fox, CO Parks & Wildlife
 **10:00-10:20** | Coffee Break and Meet Invited Speaker
 **10:20-11:15** | Mapping [Exercise](./exercises/mapping_assembly_exercise.md), Bob Fitak and Mark Stenglein
