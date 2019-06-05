@@ -99,13 +99,13 @@ Time | Activity
 <img width=150/> | <img width=600/>
 **07:00–08:00** | Breakfast, Rams Horn Dining Center
 **08:15-08:25** | Step 3: Comparing Differences Within and Between Genomes, Jill Pecon Slattery
-**08:25-09:00** | Introduction to Multiple Sequence Alignments of Targeted & Whole Genomes, Jill Pecon Slattery
+**08:25-09:00** | [Introduction to Multiple Sequence Alignments of Targeted & Whole Genomes](./lectures/Alignments_GDW2019_Lecture.pdf), Jill Pecon Slattery
 **09:00-09:30** | Alignment Computer Lab: Part 1, Jill Pecon Slattery and Justin Lee [Instructions](./exercises/Alignment_Exercise_Instructions.docx)
 **09:30-10:00** | CSU Flash Talk, Sue VandeWoude and Jenn Malmberg
 **10:00-10:20** | Coffee Break and Meet Invited Speaker
 **10:20-10:50** | Alignment computer lab: Part 2, Jill Pecon Slattery and Justin Lee
 **10:50-11:30** | [The basics of phylogenomic trees: Models, Search Algorithms, Tree Scores, Topology](./lectures/Biek_phylogenomicTrees_intro.pdf)  Roman Biek
-**11:30-12:00** | Phylogenomic Inferences of host/pathogen, Jill Pecon Slattery
+**11:30-12:00** | [Phylogenomic Inferences of host/pathogen](../lectures/Introduction_to_Host_Phylogenomics.pdf)  Jill Pecon Slattery
 **12:15-13:15** | Lunch Provided Onsite
 **13:15-15:15** | Phylogenomic Reconstruction Lab: jModeltest ML, ME MP, [MCRobot](https://phylogeny.uconn.edu/mcmc-robot/#) demo, Jill Pecon Slattery, Justin Lee, Roman Biek, Bob Fitak
 **15:15-15:35** | Coffee Break
@@ -152,7 +152,7 @@ Time | Activity
 **10:00-10:20** | Coffee Break and Meet Invited Speaker
 **10:20-11:00** | Population Genomics 101 (continued), Chris Funk
 **11:00-11:30** | Host Population Genomics in Disease: Landscape Genomics, Daryl Trumbo
-**11:40-12:15** | Computer Lab: Population Genomics, Chris Funk and Daryl Trumbo
+**11:40-12:15** | [Computer Lab: Population Genomics](./exercises/GDW_host_pop_genomics_IF_lab_HO.docx), Chris Funk and Daryl Trumbo
 **12:15-13:15** | Lunch Provided Onsite
 **13:15-15:15** | Computer Lab: Population Genomics, Chris Funk and Daryl Trumbo
 **15:15-15:35** | Coffee Break
