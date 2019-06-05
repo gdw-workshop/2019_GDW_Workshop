@@ -220,9 +220,11 @@ Is there evidence of cross-species transmission of PLVA?  …of PLVB?
 Are the viral populations geographically structured?  …temporally structured?
 
 
-## Extra credit
+## Part 2 - Comparing runs
 
-Is your Mr. Bayes analysis of the PLVAB_aln_mb.nex file complete?  If so summarize the parameter and tree files and view the output.  What was the primary difference between the two anlyses?  How do the mean and variance values of the parameter estimates compare to the output from PLVAB_aln_mb_2.nex analysis?  How do the ESS & PSRF values compare between the two analyses?  What does this say about the analysis you ran today and how would you modify future analyses to account for this?
+Your Mr. Bayes analysis of the PLVAB_aln_mb.nex file should now be complete. Summarize the parameter and tree files from that analysis and view the output.  
+
+What was the primary difference between the two anlyses?  How do the mean and variance values of the parameter estimates compare to the output from the PLVAB_aln_mb_2.nex analysis?  How do the ESS & PSRF values compare between the two analyses?  What does this say about the analysis you ran today and how can you use the output from the two runs to inform the setup of future analyses in Mr. Bayes?
 
 
 
