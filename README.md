@@ -107,7 +107,7 @@ Time | Activity
 **10:50-11:30** | The basics of phylogenomic trees: Models, Search Algorithms, Tree Scores, Topology, Roman Biek
 **11:30-12:00** | Phylogenomic Inferences of host/pathogen, Jill Pecon Slattery
 **12:15-13:15** | Lunch Provided Onsite
-**13:15-15:15** | Phylogenomic Reconstruction Lab: jModeltest ML, ME MP, MCMC demo, Jill Pecon Slattery, Justin Lee, Roman Biek, Bob Fitak
+**13:15-15:15** | Phylogenomic Reconstruction Lab: jModeltest ML, ME MP, [MCRobot](https://phylogeny.uconn.edu/mcmc-robot/#) demo, Jill Pecon Slattery, Justin Lee, Roman Biek, Bob Fitak
 **15:15-15:35** | Coffee Break
 **15:35-17:00** | Phylogenomic Reconstruction Lab: [MrBayes](./exercises/MrBayesTutorial.md), Justin Lee
 **17:00-19:30** | Free time and dinner, Rams Horn Dining Center 
