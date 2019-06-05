@@ -104,7 +104,7 @@ Time | Activity
 **09:30-10:00** | CSU Flash Talk, Sue VandeWoude and Jenn Malmberg
 **10:00-10:20** | Coffee Break and Meet Invited Speaker
 **10:20-10:50** | Alignment computer lab: Part 2, Jill Pecon Slattery and Justin Lee
-**10:50-11:30** | The basics of phylogenomic trees: Models, Search Algorithms, Tree Scores, Topology, Roman Biek
+**10:50-11:30** | [The basics of phylogenomic trees: Models, Search Algorithms, Tree Scores, Topology](./lectures/Biek_phylogenomicTrees_intro.pdf)  Roman Biek
 **11:30-12:00** | Phylogenomic Inferences of host/pathogen, Jill Pecon Slattery
 **12:15-13:15** | Lunch Provided Onsite
 **13:15-15:15** | Phylogenomic Reconstruction Lab: jModeltest ML, ME MP, [MCRobot](https://phylogeny.uconn.edu/mcmc-robot/#) demo, Jill Pecon Slattery, Justin Lee, Roman Biek, Bob Fitak
