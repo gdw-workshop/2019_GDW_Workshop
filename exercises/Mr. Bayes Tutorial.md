@@ -117,7 +117,7 @@ Default model settings:
    ------------------------------------------------------------------    
 ```
 
-Now let’s look at the MCMC paramaeters…
+Now let’s look at the MCMC parameters…
 
 ```
 # view the default MCMC parameter settings
@@ -190,7 +190,7 @@ Load the following file into Mr. Bayes: PLVAB_aln_mb_2.nex. (Can you remember ho
 Now we will summarize the sampled parameters from the two independent runs in order to generate estimated values that fit our data. The sampled parameter values have been recorded each *samplefreq = n* step in the chain throughout the analysis in .p files.  
 
 ```
-# summarize sampled parameters
+# Summarize sampled parameters
 
 MrBayes > sump
 
@@ -234,9 +234,9 @@ A2: Take a look at the following fictionalized parameter space where the x- and 
 
 ![alt text](https://github.com/gdw-workshop/2018_GDW_Workshop/blob/master/likelihoodlandscape2.png "likelihood landscape")
 
-Having multiple chains simultaneously sampling the parameter space makes it more likely that the absolute maximum likelihood (highest hill on the landscape) will be found.  This is accomplished by two mechanisms.  First, more of the parameter space can be sampled since 4 chains starting from 4 different *locations* are moving independently across the space.  Second, it allows chains to *swap* from one position on the landscape to another if the latter is in an area of higher likelihood.  This allows chains stuck on a local optimum (i.e. the green chain above) to explore other areas on the landscape by *jumping* the valleys between different hills.
+Having multiple chains simultaneously sampling the parameter space makes it more likely that the absolute maximum likelihood (highest hill on the landscape) will be found.  This is accomplished by two mechanisms.  First, more of the parameter space can be sampled since 4 chains are moving independently across the space.  Second, it allows chains to *swap* from one position on the landscape to another if the latter is in an area of higher likelihood.  This allows chains stuck on a local optimum (i.e. the green chain above) to explore other areas on the landscape by *jumping* the valleys between different hills.
 
-A3: Because each run starts with an independent starting tree and samples parameter space independently, comparing the performance of the two runs is a way to estimate how well the chains are sampling the posterior probability distribution and converging on the 'correct' parameter estimates.  The metric that is calculated throughout the run is called the *average standard deviation of split frequencies*.  This number will be large when the run starts because the runs are sampling different areas of the parameter space, but will decrease as the chains grow and converge.  By default, the analysis will stop when this value reaches 0.01.
+A3: Because each run starts with an independent starting tree and samples parameter space independently, comparing the performance of the two runs is a way to estimate how well the chains are sampling the posterior probability distribution and converging on the 'correct' parameter estimates.  The metric that is calculated throughout the run is called the *average standard deviation of split frequencies*.  This number will be large when the run starts because the runs are sampling different areas of the parameter space, but will decrease as the chains grow and converge.
 
 A4: At the start of each MCMC analysis, individual posterior parameter estimates are more dependent on the starting location (which if you recall is random!) than on what is most likely based on the alignment, model of substitution, etc.  However, as the length of the chain grows, the posterior parameter estimates become more and more accurate in reflecting the *true* values.  Therefore, the when using Bayesian MCMC approaches to estimate phylogenetic trees and their associated parameters, the early samples are called *burn-in* and are discarded from downstream analyses.
 
