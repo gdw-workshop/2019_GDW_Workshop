@@ -100,7 +100,7 @@ Time | Activity
 **07:00–08:00** | Breakfast, Rams Horn Dining Center
 **08:15-08:25** | Step 3: Comparing Differences Within and Between Genomes, Jill Pecon Slattery
 **08:25-09:00** | Introduction to Multiple Sequence Alignments of Targeted & Whole Genomes, Jill Pecon Slattery
-**09:00-09:30** | Alignment Computer Lab: Part 1, Jill Pecon Slattery and Justin Lee
+**09:00-09:30** | Alignment Computer Lab: Part 1, Jill Pecon Slattery and Justin Lee [Instructions](./exercises/Alignment_Exercise_Instructions.docx)
 **09:30-10:00** | CSU Flash Talk, Sue VandeWoude and Jenn Malmberg
 **10:00-10:20** | Coffee Break and Meet Invited Speaker
 **10:20-10:50** | Alignment computer lab: Part 2, Jill Pecon Slattery and Justin Lee
