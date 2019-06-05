@@ -3,9 +3,8 @@ Genomics of Disease in Wildlife Mr. Bayes Tutorial
 
 ## What is MrBayes?
 
-MrBayes is a command-line driven software package for Bayesian estimation of phylogenetic trees and evolution parameters that can be downloaded, installed, and run from personal computers or servers.  The software and manual can be obtained from this website...
+MrBayes is a command-line driven software package for Bayesian estimation of phylogenetic trees and evolution parameters that can be downloaded, installed, and run from personal computers or servers.  
 
-http://nbisweden.github.io/MrBayes/
 
 
 ## Ok.  Lets begin!
