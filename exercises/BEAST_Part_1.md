@@ -6,7 +6,11 @@ Genomics of Disease in Wildlife BEAST Tutorial
 
 https://drive.google.com/open?id=0B8EJy8MFHGLnOW1LX1NsM05uNEk
 
-Feel free to read on while it is downloading (it may take a couple of minutes).  Once downloaded, move it to the *Desktop/GDW_Data* folder and double click it to unzip.
+Feel free to read on while it is downloading (it may take a couple of minutes).  
+
+Once downloaded, move it to the *Desktop/GDW_Data* folder and double click it to unzip.
+
+
 
 The alignment we'll be analyzing today is the same as what we used in the Mr. Bayes tutorial yesterday.  Just as a reminder...the sequences are from two subtypes of a feline retrovirus (pumalentivirus A and B) that infect bobcats (Lru) and mountain lions (Pco).  We've constructed phylogenetic trees in BEAST using these and other sequence data from these viruses to understand host-pathogen relationships, intra-and inter-host transmission dynamics, and how the ecology of the viruses provide insight into the ecology of the hosts they infect.  Today we'll be doing a fairly standard BEAST workflow to estimate the phylogenetic relationships among these viral isolates.  The goal of this tutorial is to practice the steps required to perform an analysis using BEAST, and to introduce you to some of the concepts involved in the set up and interpetation of the analysis.
 
