@@ -62,7 +62,9 @@ FigTree (remember this?) is used to visualize the final tree and can be used to 
 
 # Ok.  Lets get Started!
 
-You should now have a *BEAST_Part1* folder in *GDW_Data* that has five files in it (this is what you downloaded and unzipped above).  Go to the *BEAST* folder in the *GDW-Apps* directory on your desktop.  All of the following programs are located here except for FigTree and Tracer which are in their own folders within GDW-Apps.
+You should now have a *BEAST_Part1* folder in *GDW_Data* that has five files in it (this is what you downloaded and unzipped above).  
+
+Go to the *BEAST* folder in the *GDW-Apps* directory on your desktop.  All of the following programs are located here except for FigTree and Tracer which are in their own folders within GDW-Apps.
 
 
 ## Open BEAUTi v1.10.4
