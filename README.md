@@ -127,9 +127,9 @@ Time | Activity
 **09:30-10:00** | CSU Flash Talk, Rebekah Kading and Anna Fragre
 **10:00-10:20** | Coffee Break and Meet Invited Speaker
 **10:20-11:15** | Lectures: Intro to concepts of molecular clocks, timescale, patterns of neutral evolution, TMRCA, Roman Biek
-**11:15-12:15** | Lab BEAST, part 1, Justin Lee
+**11:15-12:15** | Lab [BEAST, part 1](./exercises/BEAST_Part_1.md), Justin Lee
 **12:15-13:15** | Lunch Provided Onsite
-**13:15-14:15** | Lab BEAST, part 2, Justin Lee
+**13:15-14:15** | Lab [BEAST, part 2](./exercises/Beast_Part_2-Molecular_Clocks.md), Roman Biek, Justin Lee
 **14:15-14:45** | Lecture: Phylodynamics of Measurably Evolving Pathogens, Roman Biek
 **14:45-15:15** | Lecture: Signals of Selection in Host Genome, Jill Pecon Slattery
 **15:15-15:25** | Short Coffee Break
