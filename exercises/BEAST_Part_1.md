@@ -165,7 +165,7 @@ If you select different model parameters next time you use BEAUTi...you will hav
 
 For today we will leave them all at default except the following:
 
-*ucld.mean*: change this to lognormal with an intial value of 0.1 and a standard deviation of 0.5
+*ucld.mean*: change this to lognormal with an intial value of 0.1
 
 Click on the *Operators* tab.  Today (and generally) you don’t need to mess with these as long as the *Auto Optimize* box is checked in the upper left corner.  Sometimes the output from a run will give you a warning that how the chain samples a certain parameter needs to be tweaked and you can use this tab to do just that.  
 
