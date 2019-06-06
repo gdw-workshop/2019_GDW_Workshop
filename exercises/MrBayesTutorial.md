@@ -34,7 +34,7 @@ Open a terminal window and cd to *GDW_Data/MrBayes*.
 
 # start Mr. Bayes with the 'mb' command
 
-GDW2019: Desktop/GDW_Data$ mb
+GDW2019:Desktop/GDW_Data$ mb
 ```
 
 If Mr. Bayes started properly you should now see some information about the version of Mr. Bayes you are using and that the prompt has changed.
