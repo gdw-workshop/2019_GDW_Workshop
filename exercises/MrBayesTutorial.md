@@ -24,15 +24,17 @@ Are the viral populations geographically structured?  …temporally structured?
 
 ## Let’s start with the computer work.  
 
-Download the [MrBayesData.zip](./MrBayesData.zip) file from the GDW github exercises folder, place it in *Desktop/GDW_Data*, and double click it to unzip.
+Download the [MrBayesData.zip](./MrBayesData.zip) file from the GDW github exercises folder.
+
+Place it in *Desktop/GDW_Data*, and double click it to unzip.
 
 Open a terminal window and cd to *GDW_Data/MrBayes*.
 
 ```
 
-# start Mr. Bayes
+# start Mr. Bayes with the 'mb' command
 
-> mb
+GDW2019: Desktop/GDW_Data$ mb
 ```
 
 If Mr. Bayes started properly you should now see some information about the version of Mr. Bayes you are using and that the prompt has changed.
