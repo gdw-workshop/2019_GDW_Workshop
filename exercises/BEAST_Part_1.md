@@ -11,7 +11,7 @@ Feel free to read on while it is downloading (it may take a couple of minutes). 
 The alignment we'll be analyzing today is the same as what we used in the Mr. Bayes tutorial yesterday.  Just as a reminder...the sequences are from two subtypes of a feline retrovirus (pumalentivirus A and B) that infect bobcats (Lru) and mountain lions (Pco).  We've constructed phylogenetic trees in BEAST using these and other sequence data from these viruses to understand host-pathogen relationships, intra-and inter-host transmission dynamics, and how the ecology of the viruses provide insight into the ecology of the hosts they infect.  Today we'll be doing a fairly standard BEAST workflow to estimate the phylogenetic relationships among these viral isolates.  The goal of this tutorial is to practice the steps required to perform an analysis using BEAST, and to introduce you to some of the concepts involved in the set up and interpetation of the analysis.
 
 
-##  Second.  Some helpful resources.  Some of these are more essential than helpful!
+##  Second.  Some helpful resources for when you are trying this at home.  Some of these are more essential than helpful!
 
 
 Keep the manual in hand and refer to it often when using BEAST!  It comes with the main BEAST package when you download the software and I also put a copy of it in the above google drive folder.
