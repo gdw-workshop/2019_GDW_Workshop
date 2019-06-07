@@ -103,11 +103,11 @@ Time | Activity
 **09:00-09:30** | Alignment Computer Lab: Part 1, Jill Pecon Slattery and Justin Lee [Instructions](./exercises/Alignment_Exercise_Instructions.docx)
 **09:30-10:00** | CSU Flash Talk, Sue VandeWoude and Jenn Malmberg
 **10:00-10:20** | Coffee Break and Meet Invited Speaker
-**10:20-10:50** | Alignment computer lab: Part 2, Jill Pecon Slattery and Justin Lee
+**10:20-10:50** | Alignment computer lab: Part 2, Jill Pecon Slattery and Justin Lee [exercise files](./exercises/Alignment_Exercise.tar.gz)
 **10:50-11:30** | [The basics of phylogenomic trees: Models, Search Algorithms, Tree Scores, Topology](./lectures/Biek_phylogenomicTrees_intro.pdf)  Roman Biek
 **11:30-12:00** | [Phylogenomic Inferences of host/pathogen](./lectures/Introduction_to_Host_Phylogenomics.pdf)  Jill Pecon Slattery
 **12:15-13:15** | Lunch Provided Onsite
-**13:15-15:15** | Phylogenomic Reconstruction Lab: jModeltest ML, ME MP, [MCRobot](https://phylogeny.uconn.edu/mcmc-robot/#) demo, Jill Pecon Slattery, Justin Lee, Roman Biek, Bob Fitak
+**13:15-15:15** | Phylogenomic Reconstruction Lab: jModeltest ML, ME MP, [MCRobot](https://phylogeny.uconn.edu/mcmc-robot/#) demo, Jill Pecon Slattery, Justin Lee, Roman Biek, Bob Fitak [exercise files](./exercises/PAUP_Exercise.tar.gz)
 **15:15-15:35** | Coffee Break
 **15:35-17:00** | Phylogenomic Reconstruction Lab: [MrBayes](./exercises/MrBayesTutorial.md), Justin Lee
 **17:00-19:30** | Free time and dinner, Rams Horn Dining Center 
@@ -130,14 +130,12 @@ Time | Activity
 **11:15-12:15** | Lab [BEAST, part 1](./exercises/BEAST_Part_1.md), Justin Lee
 **12:15-13:15** | Lunch Provided Onsite
 **13:15-14:15** | Lab [BEAST, part 2](./exercises/Beast_Part_2-Molecular_Clocks.md), Roman Biek, Justin Lee
-**14:15-14:45** | Lecture: Phylodynamics of Measurably Evolving Pathogens, Roman Biek
-**14:45-15:15** | Lecture: Signals of Selection in Host Genome, Jill Pecon Slattery
-**15:15-15:25** | Short Coffee Break
-**15:25-16:15** | Computer Labs:  Selection, Adaptation, Variant Detection: PAML and HyPhy, Jill Pecon Slattery
-**16:45-18:30** | Hike, weather permitting, Edit Szalai
+**14:15-15:05** | Lecture: Phylodynamics of Measurably Evolving Pathogens, Roman Biek
+**15:05-15:35** | Lecture: Signals of Selection in Host Genome, Jill Pecon Slattery [lecture](./lectures/Nectin_Selection_and_Adaptation.pptx)
+**XX:XX-XX:XX** | Computer Labs:  Selection, Adaptation, Variant Detection: PAML and HyPhy, Jill Pecon Slattery (ran out of time: didn't get to this). [exercise files](./exercises/PAML_Exercises.tar.gz)
+**16:00-18:30** | Hike, weather permitting, Edit Szalai
 **17:00-19:00** | Free time and dinner, Rams Horn Dining Center 
 **19:00-21:00** | Optional computer time with instructors
-
 
 
 ### Friday June 7, 2019: Population Genomics
