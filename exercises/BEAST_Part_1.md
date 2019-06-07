@@ -62,7 +62,9 @@ FigTree (remember this?) is used to visualize the final tree and can be used to 
 
 # Ok.  Lets get Started!
 
-You should now have a *BEAST_Part1* folder in *GDW_Data* that has five files in it (this is what you downloaded and unzipped above).  Go to the *BEAST* folder in the *GDW-Apps* directory on your desktop.  All of the following programs are located here except for FigTree and Tracer which are in their own folders within GDW-Apps.
+You should now have a *BEAST_Part1* folder in *GDW_Data* that has five files in it (this is what you downloaded and unzipped above).  
+
+Go to the *BEAST* folder in the *GDW-Apps* directory on your desktop.  All of the following programs are located here except for FigTree and Tracer which are in their own folders within GDW-Apps.
 
 
 ## Open BEAUTi v1.10.4
@@ -163,7 +165,7 @@ If you select different model parameters next time you use BEAUTi...you will hav
 
 For today we will leave them all at default except the following:
 
-*ucld.mean*: change this to lognormal with an intial value of 0.1 and a standard deviation of 0.5
+*ucld.mean*: change this to lognormal with an intial value of 0.1
 
 Click on the *Operators* tab.  Today (and generally) you don’t need to mess with these as long as the *Auto Optimize* box is checked in the upper left corner.  Sometimes the output from a run will give you a warning that how the chain samples a certain parameter needs to be tweaked and you can use this tab to do just that.  
 
