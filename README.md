@@ -145,17 +145,17 @@ Time | Activity
 <img width=150/> | <img width=600/>
 **07:00–08:00** | Breakfast, Rams Horn Dining Center
 **08:15-08:25** | Step 4: Applying my genomic tools across populations within host & pathogen, Jill Pecon Slattery
-**08:25-09:30** | Population Genomics 101, Chris Funk
+**08:25-09:30** | [Population Genomics 101](./lectures/GWD_Workshop_PopGen101_lect.pdf), Chris Funk
 **09:30-10:00** | CSU Flash Talk, Chistie Mayo  
 **10:00-10:20** | Coffee Break and Meet Invited Speaker
-**10:20-11:00** | Population Genomics 101 (continued), Chris Funk
+**10:20-11:00** | [Population Genomics 101 (continued)](./lectures/GWD_host_pop_genomics_lecture2.pdf), Chris Funk
 **11:00-11:30** | Host Population Genomics in Disease: Landscape Genomics, Daryl Trumbo
 **11:40-12:15** | [Computer Lab: Population Genomics](./exercises/GDW_host_pop_genomics_IF_lab_HO.docx), Chris Funk and Daryl Trumbo
 **12:15-13:15** | Lunch Provided Onsite
 **13:15-15:15** | Computer Lab: Population Genomics, Chris Funk and Daryl Trumbo
 **15:15-15:35** | Coffee Break
 **15:35-17:00** | Computer Lab: Population Genomics, Chris Funk and Daryl Trumbo
-**18:00-??:??** | Party, Old Town Fort Collins
+**18:00-??:??** | Party, Old Town Fort Collins.  [The Blind Pig, 214 Linden Street](https://www.google.com/maps/place/Blind+Pig+Pub/@40.5808229,-105.094173,15z/data=!4m12!1m6!3m5!1s0x87694a8b38f58f1f:0x4b91d56016ab8910!2sBlind+Pig+Pub!8m2!3d40.5881945!4d-105.0748691!3m4!1s0x87694a8b38f58f1f:0x4b91d56016ab8910!8m2!3d40.5881945!4d-105.0748691)
 
 
 
