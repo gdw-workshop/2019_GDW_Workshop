@@ -11,9 +11,7 @@ Many disease-causing organisms, especially RNA viruses but also bacteria and som
 
 A standard way to check for ‘clock-like’ evolution in your data is to check whether there is an accumulation of substitutions over time, i.e. whether tree tips corresponding to samples collected later in time are more genetically divergent from the tree root (which represents the most recent common ancestor, mrca) than tips with earlier dates. What we need to test for such a pattern is a phylogenetic tree with dated tips. Importantly, this tree needs to have branches measured in genetic distance, not time, so it can’t be a tree estimated using a method already assuming a molecular clock (like BEAST). For this exercise, we will be looking at data set of genomes for the bacterial pathogen *Borrelia burgdorferi*, the agent of Lyme disease. 
 
-Download the files for this exercise from *BEAST_Part2* from the github GDW/exercises.  
-
-https://drive.google.com/open?id=1uz_qgW1MPm4-PzZQjo5kGXTP7SVf0ARx
+Download the files for this exercise from *BEAST_Part2* from the github GDW/exercises/.  
 
 You are provided with a Maximum Likelihood (ML) tree based on 23 *B. burgdorferi s.s.* genomes (main chromosome only, excluding data for the plasmids).  These samples were collected from a single site in Scotland during two time points, 1997 and 2013, so sixteen years apart. Because sampling was done at the same location both times, we can expect these isolates to be highly related. The key question is whether the isolates sampled at the later date are more genetically divergent from the root compared to the earlier isolates. In other words, **whether we see in an increase in root-to-tip divergence over time, consistent with a molecular clock**. 
 
