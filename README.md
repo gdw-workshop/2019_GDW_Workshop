@@ -182,7 +182,7 @@ Time | Activity
 * [Agenda](./GDW2019_Agenda.pdf)
 * [Group scenarios](./GDW_2019_scenarios.pdf)
 * [NGS glossary](./Genomics_and_NGS_Glossary.md)
-
+* [Google Drive - Data sets and Virtual Machine (https://drive.google.com/drive/folders/1E0FpN7XUbPZDFjljVk1siq39Av-bCkNo)]
 
 
 
