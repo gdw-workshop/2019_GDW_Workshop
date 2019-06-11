@@ -166,11 +166,11 @@ Time | Activity
 <img width=150/> | <img width=600/>
 **07:00–08:00** | Breakfast, Rams Horn Dining Center
 **08:15-08:20** | Step 6: Our Workflow & GDW2019 Publication, Jill, Bob, Sue, Chris, Mark
-**08:20-09:00** | Scenario Workflow #1: Group 1
-**09:00-09:40** | Scenario Workflow #2: Group 2 
+**08:20-09:00** | Group 1 Project [Presentation](./GDW_Group1_Project.pptx)
+**09:00-09:40** | Group 2 Project [Presentation](./GDW_Group2_Project.pptx) 
 **09:40-10:00** | Coffee Break
-**10:00-10:40** | Scenario Workflow #3: Group 3
-**10:40-11:20** | Scenario Workflow #4: Group 4
+**10:00-10:40** | Group 3 Project [Presentation](./GDW_Group3_Project.pptx)
+**10:40-11:20** | Group 4 Project [Presentation](./GDW_Group4_Project.pptx)
 **11:20-11:40** | Concluding Remarks & Farewells, instructors & participants
 
 
